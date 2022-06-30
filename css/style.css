@@ -1,0 +1,81 @@
+body {
+  background-color: #191765;
+  font-family: 'Roboto', sans-serif;
+  background-repeat: no-repeat;
+  background-position-y: 80px;
+}
+
+.timeAndIcons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.time {
+  color: white;
+  margin-left: 30px;
+}
+
+.icons {
+  background: white;
+}
+
+i {
+  color: white;
+}
+
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 30px;
+}
+
+.hamburguer {
+  margin-right: 30px;
+}
+
+.logo {
+  padding-left: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-name {
+  padding-left: 25px;
+  color: white;
+  font-weight: 500;
+}
+
+.headline {
+  background-image: url("../pictures/Ellipse18.svg");
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #7d73fc;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 55px;
+  font-size: 48px;
+  letter-spacing: 0.37px;
+}
+
+.proffesion {
+  font-weight: 500;
+  color: #edecff;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 32px;
+}
+
+.description {
+  color: white;
+  font-size: 20px;
+  margin: 100px 100px;
+  font-weight: 400;
+  line-height: 28px;
+}
