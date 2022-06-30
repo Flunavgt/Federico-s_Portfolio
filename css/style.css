@@ -1,70 +1,70 @@
 body {
-    background-color: #191765;
-    font-family: 'Roboto', sans-serif;
-    background-image: url(/Federico-s_Portfolio/pictures/Ellipse\ 18.svg);
-    background-repeat: no-repeat;
-    background-position-y: 80px;
+  background-color: #191765;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(/Federico-s_Portfolio/pictures/Ellipse\ 18.svg);
+  background-repeat: no-repeat;
+  background-position-y: 80px;
 }
 
 .timeAndIcons {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .time {
-    color: white;
-    margin-left: 30px;
+  color: white;
+  margin-left: 30px;
 }
 
 .icons {
-    background: white;
+  background: white;
 }
 
-i{
-    color: white;
+i {
+  color: white;
 }
 
-.nav-bar  {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 2rem;
-    margin-top: 30px;
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 30px;
 }
 
 .hamburguer {
-    margin-right: 30px;
+  margin-right: 30px;
 }
 
 .logo {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 .logo-name {
-    padding-left: 25px;
-    color: white;
-    font-weight: 500;
+  padding-left: 25px;
+  color: white;
+  font-weight: 500;
 }
 
 h1 {
-    color: #7D73FC;
-    font-weight: 700;
-    text-align: center;
-    padding-top: 55px;
-    font-size: 50px;
+  color: #7d73fc;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 55px;
+  font-size: 50px;
 }
 
 .proffesion {
-    font-weight: bold;
-    color: #EDECFF;
-    text-align: center;
-    padding-top: 20px; 
-    font-size: 40px;  
+  font-weight: bold;
+  color: #edecff;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 40px;
 }
 
 .description {
-    color: white;
-    font-size: 30px;
-    margin: 100px 100px;
+  color: white;
+  font-size: 30px;
+  margin: 100px 100px;
 }
