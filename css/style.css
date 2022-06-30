@@ -40,6 +40,10 @@ i {
   padding-left: 30px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .logo-name {
   padding-left: 25px;
   color: white;
@@ -47,8 +51,8 @@ i {
 }
 
 .headline {
-    background-image: url("/Federico-s_Portfolio/pictures/Ellipse18.svg");
-    background-repeat: no-repeat;
+  background-image: url("/Federico-s_Portfolio/pictures/Ellipse18.svg");
+  background-repeat: no-repeat;
 }
 
 h1 {
