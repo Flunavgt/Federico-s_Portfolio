@@ -1,7 +1,6 @@
 body {
   background-color: #191765;
   font-family: 'Roboto', sans-serif;
-  background-image: url("/Federico-s_Portfolio/pictures/Ellipse\ 18.svg");
   background-repeat: no-repeat;
   background-position-y: 80px;
 }
@@ -45,6 +44,10 @@ i {
   padding-left: 25px;
   color: white;
   font-weight: 500;
+}
+
+.headline {
+    background-image: url("/Federico-s_Portfolio/pictures/Ellipse\ 18.svg");
 }
 
 h1 {
