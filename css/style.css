@@ -1,5 +1,9 @@
 body {
     background-color: #191765;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(/Federico-s_Portfolio/pictures/Ellipse\ 18.svg);
+    background-repeat: no-repeat;
+    background-position-y: 80px;
 }
 
 .timeAndIcons {
@@ -7,7 +11,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
 }
-
 
 .time {
     color: white;
@@ -17,8 +20,6 @@ body {
 .icons {
     background: white;
 }
-
-
 
 i{
     color: white;
@@ -43,4 +44,27 @@ i{
 .logo-name {
     padding-left: 25px;
     color: white;
+    font-weight: 500;
+}
+
+h1 {
+    color: #7D73FC;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 55px;
+    font-size: 50px;
+}
+
+.proffesion {
+    font-weight: bold;
+    color: #EDECFF;
+    text-align: center;
+    padding-top: 20px; 
+    font-size: 40px;  
+}
+
+.description {
+    color: white;
+    font-size: 30px;
+    margin: 100px 100px;
 }
