@@ -22,6 +22,7 @@ body {
 
 i {
   color: white;
+  height: 30px;
 }
 
 .top {
@@ -78,4 +79,55 @@ h1 {
   margin: 100px 100px;
   font-weight: 400;
   line-height: 28px;
+}
+
+.separator {
+  display: block;
+  margin: auto;
+  padding: 50px 50px;
+}
+
+.habilities {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+ul {
+  color: #7d73fc;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+}
+
+li {
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  list-style-type: none;
+  line-height: 24px;
+}
+
+.findMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 0px;
+}
+
+.link {
+  height: 40px;
+}
+
+.workguide {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.work {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
 }
