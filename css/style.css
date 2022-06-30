@@ -47,7 +47,8 @@ i {
 }
 
 .headline {
-    background-image: url("/Federico-s_Portfolio/pictures/Ellipse\ 18.svg");
+    background-image: url("/Federico-s_Portfolio/pictures/Ellipse18.svg");
+    background-repeat: no-repeat;
 }
 
 h1 {
