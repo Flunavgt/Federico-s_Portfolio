@@ -25,7 +25,7 @@ i {
   color: white;
 }
 
-.nav-bar {
+.top {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -52,19 +52,22 @@ h1 {
   font-weight: 700;
   text-align: center;
   padding-top: 55px;
-  font-size: 50px;
+  font-size: 48px;
+  letter-spacing: 0.37px;
 }
 
 .proffesion {
-  font-weight: bold;
+  font-weight: 500;
   color: #edecff;
   text-align: center;
   padding-top: 20px;
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .description {
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   margin: 100px 100px;
+  font-weight: 400;
+  line-height: 28px;
 }
