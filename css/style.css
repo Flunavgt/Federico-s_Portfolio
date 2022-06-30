@@ -1,0 +1,46 @@
+body {
+    background-color: #191765;
+}
+
+.timeAndIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.time {
+    color: white;
+    margin-left: 30px;
+}
+
+.icons {
+    background: white;
+}
+
+
+
+i{
+    color: white;
+}
+
+.nav-bar  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 2rem;
+    margin-top: 30px;
+}
+
+.hamburguer {
+    margin-right: 30px;
+}
+
+.logo {
+    padding-left: 30px;
+}
+
+.logo-name {
+    padding-left: 25px;
+    color: white;
+}
