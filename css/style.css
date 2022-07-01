@@ -187,6 +187,7 @@ button {
   margin-left: 20px;
   color: white;
   font-size: 10px;
+  border: none;
 }
 
 .buttontext {
@@ -194,22 +195,21 @@ button {
   font-size: 10px;
 }
 
-.work2 {
-  background-image: url("../pictures/Ellipse20.svg");
+.work2,
+.work3 {
   background-repeat: no-repeat;
-  background-position: right;
   display: flex;
   flex-direction: column;
   justify-items: center;
   padding-top: 40px;
 }
 
+.work2 {
+  background-image: url("../pictures/Ellipse20.svg");
+  background-position: right;
+}
+
 .work3 {
   background-image: url("../pictures/Ellipse21.svg");
-  background-repeat: no-repeat;
   background-position: left;
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-  padding-top: 40px;
 }
