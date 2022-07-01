@@ -93,11 +93,12 @@ h1 {
   grid-template-rows: auto auto;
 }
 
-ul {
+.mixed {
   color: #7d73fc;
   font-weight: 500;
   font-size: 12px;
   line-height: 24px;
+  text-align: center;
 }
 
 li {
@@ -112,7 +113,6 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  padding-top: 0px;
 }
 
 .link {
@@ -171,6 +171,7 @@ li {
   display: flex;
   flex-direction: row;
   gap: 30px;
+  align-items: center;
 }
 
 button {
@@ -178,6 +179,8 @@ button {
   padding: 12px;
   width: 89px;
   margin-left: 20px;
+  color: white;
+  font-size: 10px;
 }
 
 .buttontext {
