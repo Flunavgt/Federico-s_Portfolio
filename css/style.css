@@ -93,12 +93,18 @@ h1 {
   grid-template-rows: auto auto;
 }
 
+.languajes {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
 .mixed {
   color: #7d73fc;
   font-weight: 500;
   font-size: 12px;
   line-height: 24px;
-  text-align: center;
+  margin-left: 41px;
 }
 
 li {
