@@ -22,6 +22,7 @@ body {
 
 i {
   color: white;
+  height: 30px;
 }
 
 .top {
@@ -78,4 +79,137 @@ h1 {
   margin: 100px 100px;
   font-weight: 400;
   line-height: 28px;
+}
+
+.separator {
+  display: block;
+  margin: auto;
+  padding: 50px 50px;
+}
+
+.habilities {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.languajes {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.mixed {
+  color: #7d73fc;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  margin-left: 41px;
+}
+
+li {
+  color: white;
+  font-weight: 400;
+  font-size: 15px;
+  list-style-type: none;
+  line-height: 24px;
+}
+
+.findMe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.link {
+  height: 40px;
+}
+
+.workguide {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.work {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.worktitle {
+  color: #7d73fc;
+  font-size: 40px;
+  font-style: medium;
+  text-align: center;
+}
+
+.work1 {
+  background-image: url("../pictures/Ellipse19.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.worksample1 {
+  width: 327px;
+  margin: auto;
+}
+
+.work1title {
+  color: white;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.workdescription {
+  color: white;
+  font-size: 20px;
+  font-family: 'inter', sans-serif;
+  margin: 20px;
+}
+
+.usedcode {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+button {
+  background-color: #7d73fc;
+  padding: 12px;
+  width: 89px;
+  margin-left: 20px;
+  color: white;
+  font-size: 10px;
+  border: none;
+}
+
+.buttontext {
+  color: white;
+  font-size: 10px;
+}
+
+.work2,
+.work3 {
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-top: 40px;
+}
+
+.work2 {
+  background-image: url("../pictures/Ellipse20.svg");
+  background-position: right;
+}
+
+.work3 {
+  background-image: url("../pictures/Ellipse21.svg");
+  background-position: left;
 }
