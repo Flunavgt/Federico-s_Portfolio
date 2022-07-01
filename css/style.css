@@ -184,3 +184,23 @@ button {
   color: white;
   font-size: 10px;
 }
+
+.work2 {
+  background-image: url("../pictures/Ellipse20.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-top: 40px;
+}
+
+.work3 {
+  background-image: url("../pictures/Ellipse21.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-top: 40px;
+}
