@@ -131,3 +131,56 @@ li {
   font-weight: 500;
   font-size: 20px;
 }
+
+.worktitle {
+  color: #7d73fc;
+  font-size: 40px;
+  font-style: medium;
+  text-align: center;
+}
+
+.work1 {
+  background-image: url("../pictures/Ellipse19.svg");
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.worksample1 {
+  width: 327px;
+  margin: auto;
+}
+
+.work1title {
+  color: white;
+  font-weight: 500;
+  font-size: 32px;
+  text-align: center;
+  padding-top: 25px;
+}
+
+.workdescription {
+  color: white;
+  font-size: 20px;
+  font-family: 'inter', sans-serif;
+  margin: 20px;
+}
+
+.usedcode {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+button {
+  background-color: #7d73fc;
+  padding: 12px;
+  width: 89px;
+  margin-left: 20px;
+}
+
+.buttontext {
+  color: white;
+  font-size: 10px;
+}
