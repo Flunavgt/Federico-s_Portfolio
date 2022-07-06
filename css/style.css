@@ -213,3 +213,99 @@ button {
   background-image: url("../pictures/Ellipse21.svg");
   background-position: left;
 }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactUs {
+  margin-top: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 44px;
+  color: #9390ff;
+}
+
+.contactUs-message {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f5f5ff;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+input {
+  margin-right: 24px;
+  margin-bottom: 24px;
+  background: #fff;
+  height: 48px;
+}
+
+.name {
+  margin-top: 40px;
+  padding-left: 7px;
+  width: 325px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #81818c;
+}
+
+.contactemail {
+  padding-left: 7px;
+  width: 325px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #191765;
+}
+
+#request1 {
+  height: 148px;
+  width: 325px;
+  padding-left: 7px;
+  padding-top: 10px;
+  color: #81818c;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.submit {
+  padding-left: 5px;
+  width: 150px;
+  height: 48px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 24px;
+  color: #edecff;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.myemail {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #ebebff;
+  margin-bottom: 40px;
+}
