@@ -74,7 +74,8 @@ h1 {
   font-weight: 400;
   font-size: 28px;
   padding-top: 5px;
-  margin: 0px auto 0px auto;
+  margin-left: auto;
+  margin-right: auto;
   width: 400px;
 }
 
@@ -119,7 +120,8 @@ li {
   justify-content: center;
   flex-wrap: wrap;
   width: 220px;
-  margin: 0px auto 0px auto;
+  margin-left: auto;
+  margin-right: auto;
   flex: 1fr 1fr 1fr 1fr 1fr;
 }
 
@@ -344,12 +346,13 @@ input {
   }
 
   .work {
-    margin: 0px;
+    margin: 1px;
     padding-left: 10px;
     padding-right: 10px;
   }
 
-  .habilities { width: 600px;
+  .habilities { 
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
     grid-template-columns: auto auto auto;
@@ -357,12 +360,14 @@ input {
     place-items: center;
   }
 
-  .description { width: 600px;
+  .description { 
+    width: 600px;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .title {background-image: url("../pictures/twocirclesheader.png");
+  .title {
+    background-image: url("../pictures/twocirclesheader.png");
     background-position: center;
   }
 
@@ -374,7 +379,8 @@ input {
   .work2,
   .work3 {
     width: 968px;
-    margin: 0px auto 0px auto;
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     grid-template-columns: auto auto;
     margin-top: 50px;
@@ -388,8 +394,10 @@ input {
 
   .work1title{
     text-align: left;
-    padding-top: 0px;
-    margin: 20px 0px 0px 20px;
+    padding-top: 0mm;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 0mm;
   }
 
   body {
@@ -416,10 +424,6 @@ input {
     order: 1;
   }
 
-  .link8 {
-    border: solid;
-  }
-
   .bottom {
     justify-content: center;
     align-items: center;
@@ -428,12 +432,11 @@ input {
   .myemail {
     margin: 0px 0px 0px 10px;
   }
-  
+
   .projectpic1 {
     width: 520px;
     height: 405px;
     display: inline-block;
     object-fit: fill;
-  }
-  
+  } 
 }
