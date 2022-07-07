@@ -23,6 +23,7 @@ body {
 i {
   color: white;
   height: 30px;
+  margin-top: 5px;
 }
 
 .top {
@@ -60,11 +61,6 @@ a {
   justify-items: center;
 }
 
-@media (min-width: 768px){
-  .title {background-image: url("../pictures/twocirclesheader.png");
-  background-position: center;}
-}
-
 h1 {
   color: #7d73fc;
   font-weight: 700;
@@ -93,12 +89,6 @@ h1 {
   margin: 0px 70px;
 }
 
-@media (min-width: 768px){
-  .description { width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 .separator {
   display: block;
   margin: auto;
@@ -112,16 +102,6 @@ h1 {
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   
-}
-
-@media (min-width: 768px) {
-  .habilities { width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    place-items: center;
-  }
 }
 
 .languajes {
@@ -149,13 +129,64 @@ li {
 .findMe {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border: solid;
-  width: 200px;
+  width: 220px;
   margin: 0px auto 0px auto;
-  align-items: baseline;
   flex: 1fr 1fr 1fr 1fr 1fr
+}
+
+.link8 {
+  display: none;
+}
+
+@media (min-width: 768px){
+  .findMe {
+    width: 768px;
+    justify-content: space-between;
+  }
+  .work {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .habilities { width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    place-items: center;
+  }
+  .description { width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {background-image: url("../pictures/twocirclesheader.png");
+    background-position: center;
+  }
+  .link8 {
+    display: inline;
+  }
+  .work1 {
+    border: solid;
+    width: 868px;
+    margin: 0px auto 0px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .jobdesc {
+    border: 3px solid white;
+    width: 450px;
+  }
+  .work1title{
+    font-size: 10px;
+    color: black;
+  }
+  .projectpic1 {
+    width: 450px;
+    display: inline-block;
+  }
 }
 
 .link {
@@ -166,7 +197,18 @@ li {
 .work {
   color: white;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 25px;
+  display: inline-block;
+  margin: 0px;
+}
+
+.jobdesc {
+  display: flex;
+  flex-direction: column;
+}
+
+.link6 {
+  font-size: 25px;
 }
 
 .worktitle {
@@ -176,7 +218,7 @@ li {
   text-align: center;
 }
 
-.work1 {
+.firstback {
   background-image: url("../pictures/Ellipse19.svg");
   background-repeat: no-repeat;
   display: flex;
@@ -195,6 +237,7 @@ li {
   font-size: 32px;
   text-align: center;
   padding-top: 25px;
+  width: 200px;
 }
 
 .workdescription {
@@ -202,6 +245,7 @@ li {
   font-size: 20px;
   font-family: 'inter', sans-serif;
   margin: 20px;
+  width: 300px;
 }
 
 .usedcode {
@@ -209,6 +253,7 @@ li {
   flex-direction: row;
   gap: 30px;
   align-items: center;
+  width: 300px;
 }
 
 button {
