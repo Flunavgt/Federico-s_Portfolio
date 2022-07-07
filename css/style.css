@@ -25,6 +25,7 @@ i {
 
 .hamburguer {
   margin-right: 30px;
+  display: block;
 }
 
 .logo {
@@ -44,10 +45,6 @@ a {
 .portfolio,
 #portfolio {
   display: none;
-}
-
-.hamburguer {
-  display: block;
 }
 
 .title {
@@ -233,7 +230,7 @@ button:active {
 }
 
 button:disabled {
-  background: black;
+  background: #0d052e;
 }
 
 .buttontext {
