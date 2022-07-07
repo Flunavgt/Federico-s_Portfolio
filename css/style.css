@@ -141,54 +141,6 @@ li {
   display: none;
 }
 
-@media (min-width: 768px){
-  .findMe {
-    width: 768px;
-    justify-content: space-between;
-  }
-  .work {
-    margin: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .habilities { width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto auto;
-    place-items: center;
-  }
-  .description { width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .title {background-image: url("../pictures/twocirclesheader.png");
-    background-position: center;
-  }
-  .link8 {
-    display: inline;
-  }
-  .work1 {
-    border: solid;
-    width: 868px;
-    margin: 0px auto 0px auto;
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-  .jobdesc {
-    border: 3px solid white;
-    width: 450px;
-  }
-  .work1title{
-    font-size: 10px;
-    color: black;
-  }
-  .projectpic1 {
-    width: 450px;
-    display: inline-block;
-  }
-}
-
 .link {
   height: 40px;
   width: 40px;
@@ -218,6 +170,7 @@ li {
   text-align: center;
 }
 
+
 .firstback {
   background-image: url("../pictures/Ellipse19.svg");
   background-repeat: no-repeat;
@@ -231,13 +184,19 @@ li {
   margin: auto;
 }
 
+.projectpic1 {
+  width: 327px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .work1title {
   color: white;
   font-weight: 500;
   font-size: 32px;
   text-align: center;
   padding-top: 25px;
-  width: 200px;
+  width: 250px;
 }
 
 .workdescription {
@@ -272,12 +231,18 @@ button {
 }
 
 .work2,
+.work1,
 .work3 {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-items: center;
   padding-top: 40px;
+}
+
+.background2 {
+  background-image: url("../pictures/Ellipse20.svg");
+  background-position: right;
 }
 
 .work2 {
@@ -384,4 +349,76 @@ input {
   line-height: 28px;
   color: #ebebff;
   margin-bottom: 40px;
+}
+
+@media (min-width: 768px){
+  .findMe {
+    width: 768px;
+    justify-content: space-between;
+  }
+  .work {
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .habilities { width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    place-items: center;
+  }
+  .description { width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {background-image: url("../pictures/twocirclesheader.png");
+    background-position: center;
+  }
+  .link8 {
+    display: inline;
+  }
+  .work1,
+  .work2,
+  .work3 {
+    width: 968px;
+    margin: 0px auto 0px auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  .jobdesc {
+    width: 450px;
+    height: 400px;
+  }
+  .work1title{
+    text-align: left;
+    padding-top: 0px;
+    margin: 0px;
+  }
+  body {
+    background-image: url("../pictures/Ellipse20.svg");
+    background-position: right;
+    background-position-y: 2000px;
+  }
+  .body {
+    background-image: url("../pictures/Ellipse21.svg");
+    background-position: right;
+    background-position-y: 2000px;
+  }
+  .picorder {
+    order: 2;
+    border: 3px solid red;
+  }
+  .textorder {
+    order: 1;
+  }
+  .projectpic1 {
+    width: 520px;
+    height: 405px;
+    display: inline-block;
+    object-fit: fill;
+  }
+  
 }
