@@ -41,6 +41,15 @@ a {
   font-weight: 500;
 }
 
+.portfolio,
+#portfolio {
+  display: none;
+}
+
+.hamburguer {
+  display: block;
+}
+
 .title {
   background-image: url("../pictures/Ellipse18.svg");
   background-repeat: no-repeat;
@@ -48,6 +57,14 @@ a {
   display: flex;
   flex-direction: column;
   justify-items: center;
+}
+
+.sep {
+  width: 250px;
+  border-bottom: 1px solid #646369;
+  margin: 0 auto 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 h1 {
@@ -79,13 +96,8 @@ h1 {
   width: 400px;
 }
 
-.separator {
-  display: block;
-  margin: auto;
-  padding: 50px 50px;
-}
-
 .habilities {
+  padding-top: 20px;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto;
@@ -210,6 +222,18 @@ button {
   color: white;
   font-size: 10px;
   border: none;
+}
+
+button:hover {
+  box-shadow: 0 0 50px lightblue;
+}
+
+button:active {
+  background: #5E42D7;
+}
+
+button:disabled {
+  background: black;
 }
 
 .buttontext {
@@ -361,7 +385,7 @@ input {
   }
 
   .description {
-    width: 600px;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -369,10 +393,31 @@ input {
   .title {
     background-image: url("../pictures/twocirclesheader.png");
     background-position: center;
+    background-size: contain;
+  }
+
+  .hamburguer {
+    display: none;
+  }
+
+  .portfolio,
+  #portfolio,
+  .logo-name {
+    display: inline-block;
+    color: white;
+    font-size: 15px;
+  }
+
+  #portfolio1 {
+    display: none;
   }
 
   .link8 {
     display: inline;
+  }
+
+  .sep {
+    width: 450px;
   }
 
   .work1,
