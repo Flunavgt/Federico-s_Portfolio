@@ -5,17 +5,6 @@ body {
   background-position-y: 80px;
 }
 
-.timeAndIcons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.time {
-  color: white;
-  margin-left: 30px;
-}
-
 .icons {
   background: white;
 }
@@ -95,8 +84,6 @@ h1 {
   padding: 50px 50px;
 }
 
-
-
 .habilities {
   display: grid;
   grid-template-columns: auto auto;
@@ -169,7 +156,6 @@ li {
   font-style: medium;
   text-align: center;
 }
-
 
 .firstback {
   background-image: url("../pictures/Ellipse19.svg");
@@ -275,6 +261,7 @@ button {
   font-family: 'Inter', sans-serif;
   text-align: center;
   font-style: normal;
+  width: 425px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -395,24 +382,36 @@ input {
   .work1title{
     text-align: left;
     padding-top: 0px;
-    margin: 0px;
+    margin: 20px 0px 0px 20px;
   }
   body {
-    background-image: url("../pictures/Ellipse20.svg");
-    background-position: right;
-    background-position-y: 2000px;
-  }
-  .body {
-    background-image: url("../pictures/Ellipse21.svg");
-    background-position: right;
-    background-position-y: 2000px;
+    background-image: url("../pictures/Ellipse20.svg"), url("../pictures/Ellipse21.svg");
+    background-position: right, left;
+    background-position-y: 2000px, 2550px;
   }
   .picorder {
     order: 2;
-    border: 3px solid red;
+  }
+  .contactUs-message{
+    width: 550px;
+  }
+  .name,
+  .contactemail,
+  #request1 {
+    width: 550px;
   }
   .textorder {
     order: 1;
+  }
+  .link8 {
+    border: solid;
+  }
+  .bottom {
+    justify-content: center;
+    align-items: center;
+  }
+  .myemail {
+    margin: 0px 0px 0px 10px;
   }
   .projectpic1 {
     width: 520px;
