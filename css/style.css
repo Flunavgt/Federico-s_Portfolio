@@ -405,6 +405,33 @@ input {
     font-size: 15px;
   }
 
+  .logo-name {
+    animation-duration: 0.5s;
+    animation-name: rotate;
+  }
+
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+
+    25% {
+      transform: rotate(75deg);
+    }
+
+    50% {
+      transform: rotate(150deg);
+    }
+
+    75% {
+      transform: rotate(225deg);
+    }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   #portfolio1 {
     display: none;
   }
@@ -480,5 +507,11 @@ input {
     height: 405px;
     display: inline-block;
     object-fit: fill;
+    transition: width 1s, height 1s;
+  }
+
+  .projectpic1:hover {
+    width: 560px;
+    height: 435px;
   }
 }
