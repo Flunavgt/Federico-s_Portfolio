@@ -23,8 +23,8 @@ Copy all files with the same file sturcture.
 👤 Federico Luna V.
 
 - GitHub: [@Flunavgt](https://github.com/Flunavgt)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- Twitter: [@flunavgt](https://twitter.com/flunavgt)
+- LinkedIn: [federico-luna-Gt](https://linkedin.com/in/federico-luna-Gt)
 
 ## 🤝 Contributing
 
