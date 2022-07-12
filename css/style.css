@@ -350,6 +350,10 @@ input {
   justify-content: center;
 }
 
+form label {
+  visibility: hidden;
+}
+
 .myemail {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
