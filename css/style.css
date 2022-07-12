@@ -69,7 +69,7 @@ h1 {
   font-weight: 700;
   text-align: center;
   padding-top: 55px;
-  font-size: 48px;
+  font-size: 3rem;
   letter-spacing: 0.37px;
 }
 
@@ -78,7 +78,7 @@ h1 {
   color: #edecff;
   text-align: center;
   padding-top: 20px;
-  font-size: 32px;
+  font-size: 2rem;
   height: 80px;
   padding-bottom: 50px;
 }
@@ -86,7 +86,7 @@ h1 {
 .description {
   color: white;
   font-weight: 400;
-  font-size: 28px;
+  font-size: 1.8rem;
   padding-top: 5px;
   margin-left: auto;
   margin-right: auto;
@@ -109,7 +109,7 @@ h1 {
 .mixed {
   color: #7d73fc;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 24px;
   margin-left: 41px;
 }
@@ -117,7 +117,7 @@ h1 {
 li {
   color: white;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9rem;
   list-style-type: none;
   line-height: 24px;
 }
@@ -146,7 +146,7 @@ li {
 .work {
   color: white;
   font-weight: 500;
-  font-size: 25px;
+  font-size: 1.6rem;
   display: inline-block;
   margin: 1px;
 }
@@ -157,12 +157,12 @@ li {
 }
 
 .link6 {
-  font-size: 25px;
+  font-size: 1.6rem;
 }
 
 .worktitle {
   color: #7d73fc;
-  font-size: 40px;
+  font-size: 3rem;
   font-style: medium;
   text-align: center;
 }
@@ -189,7 +189,7 @@ li {
 .work1title {
   color: white;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
   padding-top: 25px;
   width: 250px;
@@ -197,7 +197,7 @@ li {
 
 .workdescription {
   color: white;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-family: 'inter', sans-serif;
   margin: 20px;
   width: 300px;
@@ -217,7 +217,7 @@ button {
   width: 89px;
   margin-left: 20px;
   color: white;
-  font-size: 10px;
+  font-size: 0.6rem;
   border: none;
 }
 
@@ -235,7 +235,7 @@ button:disabled {
 
 .buttontext {
   color: white;
-  font-size: 10px;
+  font-size: 0.6rem;
 }
 
 .work2,
@@ -274,7 +274,7 @@ button:disabled {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 2rem;
   line-height: 44px;
   color: #9390ff;
 }
@@ -285,7 +285,7 @@ button:disabled {
   font-style: normal;
   width: 425px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   color: #f5f5ff;
   padding-left: 24px;
@@ -306,7 +306,7 @@ input {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 24px;
   color: #81818c;
 }
@@ -317,7 +317,7 @@ input {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 24px;
   color: #191765;
 }
@@ -331,7 +331,7 @@ input {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 0.9rem;
   line-height: 24px;
 }
 
@@ -342,7 +342,7 @@ input {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 24px;
   color: #edecff;
   margin: auto;
@@ -350,11 +350,15 @@ input {
   justify-content: center;
 }
 
+form label {
+  visibility: hidden;
+}
+
 .myemail {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.3rem;
   line-height: 28px;
   color: #ebebff;
   margin-bottom: 40px;
@@ -402,7 +406,7 @@ input {
   .logo-name {
     display: inline-block;
     color: white;
-    font-size: 15px;
+    font-size: 0.9rem;
   }
 
   .logo-name {

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fede's Portfolio</title>
+    <link rel = "icon" href = "./pictures/favicon.ico" type = "image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,6 +39,7 @@
             </nav>
         </div>
     </header>
+    <main>
     <section>
         <div class="title">    
             <h1>Federico Luna Vannini</h1>
@@ -110,7 +112,7 @@
         </div>
         <div class="firstback">
             <div class="work1">
-                <img src="./pictures/myproject.jpg" alt="fill image while coding" class="projectpic1">
+                <img src="./pictures/myproject.jpg" alt="image of small boulder in desert, temporary image while project is completed" class="projectpic1">
                 <div class="jobdesc">
                 <p class="work1title">Multi-Post Stories</p>
                 <p class="workdescription">A daily selection of privately personalized reads;
@@ -131,7 +133,7 @@
             </div>
             <div class="background2"></div>
             <div class="work2">
-                <img src="./pictures/myproject.jpg" alt="fill image while coding" class="projectpic1 picorder">
+                <img src="./pictures/myproject.jpg" alt="image of small boulder in desert, temporary image while project is completed" class="projectpic1 picorder">
                 <div class="jobdesc textorder">
                 <p class="work1title">Multi-Post Stories</p>
                 <p class="workdescription">A daily selection of privately personalized reads;
@@ -152,7 +154,7 @@
             </div>
             <div class="background3"></div>
             <div class="work3">
-                <img src="./pictures/myproject.jpg" alt="fill image while coding" class="projectpic1">
+                <img src="./pictures/myproject.jpg" alt="image of small boulder in desert, temporary image while project is completed" class="projectpic1">
                 <div class="jobdesc">
                 <p class="work1title">Multi-Post Stories</p>
                 <p class="workdescription">A daily selection of privately personalized reads;
@@ -177,13 +179,19 @@
         <h2 class="contactUs">CONTACT US</h2>
         <p class="contactUs-message">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
         <form action="https://formspree.io/f/mjvlqywj" class="name" method="post">
-            <input type="text" class="name" placeholder="Full Name" name="fullName" minlength="1" maxlength="30" required>
-            <input type="email" class="contactemail" placeholder="Email" name="email" required>
+            <label for="name" class="">Full Name</label>
+            <input type="text" class="name" id="name" placeholder="Full Name" name="fullName" minlength="1" maxlength="30" required>
+            <label for="email">Email</label>
+            <input type="email" class="contactemail" id="email" placeholder="Email" name="email" required>
+            <label for="request1">text area</label>
             <textarea name="request" id="request1" cols="30" rows="10" maxlength="500" placeholder="Enter Text here"></textarea>
         <button type="submit" class="submit">Submit Request</button>
         </form>
         <div class="sep">
         </div>
+    </section>
+    </main>
+    <footer>
         <div class="findMe bottom">
         <div class="social link1">
             <a href="https://github.com/Flunavgt"><img class="link" src="pictures/TimeAndIcons/github.png" alt="Github icon and link to account"></a>
@@ -194,6 +202,7 @@
         </div>
         <a href="mailto:fluna1973@gmail.com" class="myemail">fluna1973@gmail.com</a>
         </div>
-    </section>
+    </footer>
+   
 </body>
 </html>

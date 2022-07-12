@@ -26,6 +26,19 @@ Copy all files with the same file sturcture.
 - Twitter: [@flunavgt](https://twitter.com/flunavgt)
 - LinkedIn: [federico-luna-Gt](https://linkedin.com/in/federico-luna-Gt)
 
+## Collaborators
+
+👤 **Tahseen Zahra**
+
+- GitHub: [@tahseenzahra](https://github.com/tahseenzahra)
+- Twitter: [@tahseen1zahra](https://twitter.com/tahseen1zahra)
+- LinkedIn: [@tahseenzahra](https://www.linkedin.com/in/tahseenzahra/)
+
+👤 **Norman Ainobushoborozi** 
+- GitHub: [@normainobary2021](https://github.com/normainobary2021) 
+- Twitter: [@NormanAinobush2](https://twitter.com/NormanAinobush2) 
+- LinkedIn: [@norman-ainobushoborozi](https://www.linkedin.com/in/norman-ainobushoborozi/) 
+
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
