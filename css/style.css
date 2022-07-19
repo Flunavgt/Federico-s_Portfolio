@@ -39,26 +39,26 @@ i {
   background-color: white;
 }
 
-#hambclose .bar:nth-child(2){
+#hambclose .bar:nth-child(2) {
   opacity: 0;
 }
 
-#hambclose .bar:nth-child(1){
+#hambclose .bar:nth-child(1) {
   transform: translateY(0.5rem) rotate(45deg);
 }
 
-#hambclose .bar:nth-child(3){
+#hambclose .bar:nth-child(3) {
   transform: translateY(-0.5rem) rotate(-45deg);
-}
-
-#hambclose:hover {
-  cursor: pointer;
 }
 
 #hambclose {
   position: fixed;
   top: 3%;
   right: 6%;
+}
+
+#hambclose:hover {
+  cursor: pointer;
 }
 
 .navigationLinks {
@@ -70,7 +70,6 @@ i {
   gap: 1.5rem;
   font-weight: 500;
   font-size: 1.5rem;
-  font-family: 'Roboto';
   background-image: url(../pictures/shape\ mobile\ menu-2.svg);
   background-repeat: no-repeat;
   height: 50%;
@@ -88,7 +87,7 @@ i {
 
 .logo {
   padding-left: 30px;
-  color: ;
+  color: white;
 }
 
 a {
@@ -119,7 +118,7 @@ a {
   display: none;
 }
 
-#closeBtn{
+#closeBtn {
   position: absolute;
   right: 10%;
   top: 6%;
@@ -130,12 +129,12 @@ a {
 #closebtnt {
   width: 600px;
 }
+
 .portfolio,
 #portfolio {
   transition: 0.8s ease;
   color: white;
 }
-
 
 .portfolio:hover {
   color: #9390ff;
@@ -146,8 +145,6 @@ a {
 #portfolio:hover {
   cursor: pointer;
 }
-
-
 
 .title {
   background-image: url("../pictures/Ellipse18.svg");
@@ -515,6 +512,8 @@ form label {
   .desktopnav {
     display: block;
     padding-right: 2rem;
+    position: fixed;
+    right: 2rem;
   }
 
   .logo-name {
