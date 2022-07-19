@@ -23,13 +23,72 @@ i {
   margin-top: 30px;
 }
 
-.hamburguer {
-  margin-right: 30px;
+.hamburger {
   display: block;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.bar {
+  display: block;
+  width: 1.6rem;
+  height: 0.2rem;
+  margin: 0.3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+#hambclose .bar:nth-child(2){
+  opacity: 0;
+}
+
+#hambclose .bar:nth-child(1){
+  transform: translateY(0.5rem) rotate(45deg);
+}
+
+#hambclose .bar:nth-child(3){
+  transform: translateY(-0.5rem) rotate(-45deg);
+}
+
+#hambclose:hover {
+  cursor: pointer;
+}
+
+#hambclose {
+  position: fixed;
+  top: 3%;
+  right: 6%;
+}
+
+.navigationLinks {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 4rem;
+  padding-top: 6rem;
+  gap: 1.5rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  background-image: url(../pictures/shape\ mobile\ menu-2.svg);
+  background-repeat: no-repeat;
+  height: 50%;
+}
+
+.menuarrow {
+  width: 2rem;
+}
+
+.mobMenuItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
   padding-left: 30px;
+  color: ;
 }
 
 a {
@@ -42,10 +101,53 @@ a {
   font-weight: 500;
 }
 
-.portfolio,
-#portfolio {
+.desktopnav {
   display: none;
 }
+
+#modalMenu {
+  width: 100%;
+  height: 100%;
+  background-color: #191765;
+  background-image: url("../pictures/shape\ mobile\ menu-1.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#closeBtn{
+  position: absolute;
+  right: 10%;
+  top: 6%;
+}
+
+#closebtntest,
+#closebtntest3,
+#closebtnt {
+  width: 600px;
+}
+.portfolio,
+#portfolio {
+  transition: 0.8s ease;
+  color: white;
+}
+
+
+.portfolio:hover {
+  color: #9390ff;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#portfolio:hover {
+  cursor: pointer;
+}
+
+
 
 .title {
   background-image: url("../pictures/Ellipse18.svg");
@@ -397,7 +499,7 @@ form label {
     background-size: contain;
   }
 
-  .hamburguer {
+  .hamburger {
     display: none;
   }
 
@@ -407,6 +509,12 @@ form label {
     display: inline-block;
     color: white;
     font-size: 0.9rem;
+    padding-right: 10px;
+  }
+
+  .desktopnav {
+    display: block;
+    padding-right: 2rem;
   }
 
   .logo-name {
