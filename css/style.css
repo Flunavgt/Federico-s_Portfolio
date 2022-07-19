@@ -54,7 +54,7 @@ i {
 #hambclose {
   position: fixed;
   top: 3%;
-  right: 6%;
+  right: 10%;
 }
 
 #hambclose:hover {
@@ -65,7 +65,7 @@ i {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 4rem;
+  padding: 2rem;
   padding-top: 6rem;
   gap: 1.5rem;
   font-weight: 500;
