@@ -83,6 +83,7 @@ i {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 2rem;
 }
 
 .logo {
@@ -230,7 +231,7 @@ li {
   width: 220px;
   margin-left: auto;
   margin-right: auto;
-  flex: 1fr 1fr 1fr 1fr 1fr;
+  flex: 45px 45px 45px 45px 45px;
 }
 
 .link8 {
@@ -262,7 +263,6 @@ li {
 .worktitle {
   color: #7d73fc;
   font-size: 3rem;
-  font-style: medium;
   text-align: center;
 }
 
@@ -505,15 +505,13 @@ form label {
   .logo-name {
     display: inline-block;
     color: white;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     padding-right: 10px;
   }
 
   .desktopnav {
     display: block;
     padding-right: 2rem;
-    position: fixed;
-    right: 2rem;
   }
 
   .logo-name {
