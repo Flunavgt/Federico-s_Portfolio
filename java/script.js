@@ -5,7 +5,7 @@ hamburger.addEventListener('click', () => {
   modalMenu.style.display = 'block';
 });
 
-const button =  document.querySelector('.active');
+const button = document.querySelector('.active');
 
 button.addEventListener('click', () => {
   modalMenu.style.display = 'none';
