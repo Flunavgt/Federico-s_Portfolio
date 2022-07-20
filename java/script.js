@@ -47,19 +47,20 @@ newarrow.addEventListener('click', () => {
   modalMenu.style.display = 'none';
 });
 
-let arr1 = ["Multi-Post Stories 1","This is the firtst A daily selection of privately personalized reads\;\
+const arr1 = ['Multi-Post Stories 1' , 'This is the firtst A daily selection of privately personalized reads;\
 no accounts or sign-ups required. Has been the industry standard dummy\
-text ever since the 1500s\,\ when an unknown printer took standard dummy test.","CSS","Html","Bootstrap","Ruby"];
+text ever since the 1500s, when an unknown printer took standard dummy test.' , 'CSS' , 'Html' , 'Bootstrap' , 'Ruby'];
 
-let arr2 = ["Multi-Post Stories 2","This is the second A daily selection of privately personalized reads\;\
+const arr2 = ['Multi-Post Stories 2' , 'This is the second A daily selection of privately personalized reads;\
 no accounts or sign-ups required. Has been the industry standard dummy\
-text ever since the 1500s\,\ when an unknown printer took standard dummy test.","CSS","Html","Bootstrap","Ruby"];
+text ever since the 1500s, when an unknown printer took standard dummy test.' , 'CSS' , 'Html' , 'Bootstrap' , 'Ruby'];
 
-let arr3 = ["Multi-Post Stories 3","This is the third A daily selection of privately personalized reads\;\
+const arr3 = ['Multi-Post Stories 3' , 'This is the third A daily selection of privately personalized reads;\
 no accounts or sign-ups required. Has been the industry standard dummy\
-text ever since the 1500s\,\ when an unknown printer took standard dummy test.","CSS","Html","Bootstrap","Ruby"];
+text ever since the 1500s, when an unknown printer took standard dummy test.' , 'CSS' , 'Html' , 'Bootstrap' , 'Ruby'];
 
 const btn1 = document.querySelector('.btn1');
+const popUp1 = document.querySelector('#popUp1');
 
 btn1.addEventListener('click', () => {
   popUp1.style.display = 'block';
@@ -84,35 +85,36 @@ btn2.addEventListener('click', () => {
 });
 
 function openpopUp1(string) {
-  if (string== 'project1') {
-    document.getElementById("popuptitle").innerHTML = arr1[0];
-    document.getElementById("popupdescription").innerHTML = arr1[1];
-    document.getElementById("popupimg").src = "./pictures/twitter.png";
-    document.getElementById("popuptec1").innerHTML = arr1[2];
-    document.getElementById("popuptec2").innerHTML = arr1[3];
-    document.getElementById("popuptec3").innerHTML = arr1[4];
-    document.getElementById("popuptec4").innerHTML = arr1[5];
-    document.getElementById("see_live1").href = "https://www.github.com";
-    document.getElementById("see_source1").href = "https://www.github.com";
-  } if (string== 'project2') {
-    document.getElementById("popuptitle").innerHTML = arr2[0];
-    document.getElementById("popupdescription").innerHTML = arr2[1];
-    document.getElementById("popupimg").src = "./pictures/github.png";
-    document.getElementById("popuptec1").innerHTML = arr2[2];
-    document.getElementById("popuptec2").innerHTML = arr2[3];
-    document.getElementById("popuptec3").innerHTML = arr2[4];
-    document.getElementById("popuptec4").innerHTML = arr2[5];
-    document.getElementById("see_live1").href = "https://www.github.com";
-    document.getElementById("see_source1").href = "https://www.github.com";
-  } if (string== 'project3') {
-    document.getElementById("popuptitle").innerHTML = arr3[0];
-    document.getElementById("popupdescription").innerHTML = arr3[1];
-    document.getElementById("popupimg").src = "./pictures/linkedin.png";document.getElementById("popuptec1").innerHTML = arr1[2];
-    document.getElementById("popuptec1").innerHTML = arr3[3];
-    document.getElementById("popuptec2").innerHTML = arr3[4];
-    document.getElementById("popuptec3").innerHTML = arr3[5];
-    document.getElementById("popuptec4").innerHTML = arr3[5];
-    document.getElementById("see_live1").href = "https://www.github.com";
-    document.getElementById("see_source1").href = "https://www.github.com";
+  if (string === 'project1') {
+    document.getElementById('popuptitle').innerHTML = arr1[0];
+    document.getElementById('popupdescription').innerHTML = arr1[1];
+    document.getElementById('popupimg').src = "./pictures/twitter.png";
+    document.getElementById('popuptec1').innerHTML = arr1[2];
+    document.getElementById('popuptec2').innerHTML = arr1[3];
+    document.getElementById('popuptec3').innerHTML = arr1[4];
+    document.getElementById('popuptec4').innerHTML = arr1[5];
+    document.getElementById('see_live1').href = 'https://www.github.com';
+    document.getElementById('see_source1').href = 'https://www.github.com';
+  } if (string === 'project2') {
+    document.getElementById('popuptitle').innerHTML = arr2[0];
+    document.getElementById('popupdescription').innerHTML = arr2[1];
+    document.getElementById('popupimg').src = "./pictures/github.png";
+    document.getElementById('popuptec1').innerHTML = arr2[2];
+    document.getElementById('popuptec2').innerHTML = arr2[3];
+    document.getElementById('popuptec3').innerHTML = arr2[4];
+    document.getElementById('popuptec4').innerHTML = arr2[5];
+    document.getElementById('see_live1').href = 'https://www.github.com';
+    document.getElementById('see_source1').href = 'https://www.github.com';
+  } if (string === 'project3') {
+    document.getElementById('popuptitle').innerHTML = arr3[0];
+    document.getElementById('popupdescription').innerHTML = arr3[1];
+    document.getElementById('popupimg').src = "./pictures/linkedin.png";
+    document.getElementById('popuptec1').innerHTML = arr1[2];
+    document.getElementById('popuptec1').innerHTML = arr3[3];
+    document.getElementById('popuptec2').innerHTML = arr3[4];
+    document.getElementById('popuptec3').innerHTML = arr3[5];
+    document.getElementById('popuptec4').innerHTML = arr3[5];
+    document.getElementById('see_live1').href = "https://www.github.com";
+    document.getElementById('see_source1').href = "https://www.github.com";
 }
-};
+}

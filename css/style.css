@@ -169,13 +169,6 @@ a {
   padding-top: 1.5rem;
 }
 
-.toppopup1 .work1title {
-  margin: 0;
-  padding: 0;
-  padding-right: 2.25rem;
-  font-size: 1.75rem;
-}
-
 .popup_buttons {
   display: flex;
   flex-flow: column wrap;
@@ -372,6 +365,13 @@ li {
   width: 250px;
   padding-left: 1.89rem;
   padding-bottom: 3.5rem;
+}
+
+.toppopup1 .work1title {
+  margin: 0;
+  padding: 0;
+  padding-right: 2.25rem;
+  font-size: 1.75rem;
 }
 
 .workdescription {
@@ -726,12 +726,12 @@ form label {
     width: 368px;
     padding: 0;
   }
-  
+
   .marginpopUp {
     width: 80%;
     margin-left: 150px;
     margin-bottom: 0;
-    height: 80%;
+    height: 90%;
     padding-bottom: 0;
   }
 
@@ -752,6 +752,7 @@ form label {
   #see_live1 {
     margin-left: 0;
   }
+
   .popUp1 .usedcode {
     padding-bottom: 3rem;
   }
