@@ -770,4 +770,9 @@ form label {
   .popUp1 .usedcode {
     padding-bottom: 3rem;
   }
+
+  .popup_buttons {
+    display: flex;
+    flex-flow: row wrap;
+  }
 }
