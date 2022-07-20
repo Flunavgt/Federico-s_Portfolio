@@ -189,7 +189,7 @@ a {
 }
 
 .popUpactive {
-  display: none !important ;
+  display: none !important;
 }
 
 .img_popUp1 {
@@ -215,21 +215,6 @@ p {
   align-items: center;
   justify-self: center;
 }
-
-/*#see_live1,
-#see_source1 {
-  margin: 0;
-  height: 40px;
-  margin-bottom: 1rem;
-  background-color: #7d73fc;
-  padding: 12px;
-  width: 89px;
-  color: white;
-  font-size: 0.6rem;
-  border: none;
-  cursor: pointer;
-} */
-
 
 .sep {
   width: 250px;

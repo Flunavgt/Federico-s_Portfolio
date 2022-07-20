@@ -50,40 +50,50 @@ newarrow.addEventListener('click', () => {
 const arr1 = [
   {
     id: 0,
-    popuptitle:'Multi-Post Stories 1',
-    popupdescription:'This is the first A daily for this is a test and is test number 1',
+    popuptitle: 'Multi-Post Stories 1',
+    popupdescription: 'This is the first A daily for this is a test and is test number 1',
     popuptec:['CSS', 'Html', 'Bootstrap', 'Ruby'],
-    popupimg:'./pictures/golf.jpg',
-    btnlive:'https://www.github.com',
-    btnsource:'https://www.github.com',
+    popupimg: './pictures/golf.jpg',
+    btnlive: 'https://www.github.com',
+    btnsource: 'https://www.github.com',
   },
   {
     id: 1,
-    popuptitle:'Multi-Post Stories 2',
-    popupdescription:'This is the second A daily for this is a test and is test number 2',
-    popupimg:'./pictures/beach.jpg',
+    popuptitle: 'Multi-Post Stories 2',
+    popupdescription: 'This is the second A daily for this is a test and is test number 2',
+    popupimg: './pictures/beach.jpg',
   },
   {
     id: 2,
-    popuptitle:'Multi-Post Stories 3',
-    popupdescription:'This is the third A daily for this is a test and is test number 3',
-    popupimg:'./pictures/desert.jpg',
-  }
+    popuptitle: 'Multi-Post Stories 3',
+    popupdescription: 'This is the third A daily for this is a test and is test number 3',
+    popupimg: './pictures/desert.jpg',
+  },
 ];
+
+const arr2 = [
+  {
+    id:0,
+    popuptec1: 'CSS',
+    popuptec2: 'Html',
+    popuptec3: 'Bootstrap',
+    popuptec4: 'Ruby',
+  }
+]
 
 const btn1 = document.querySelector('.btn1');
 const popUp1 = document.querySelector('#popUp1');
 
 btn1.addEventListener('click', () => {
-  popUp1.classList.toggle('popUpactive')
+  popUp1.classList.toggle('popUpactive');
   popUp1.style.display = 'block';
   document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
   document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
   document.getElementById('popupimg').src = arr1[0].popupimg;
-  document.getElementById('popuptec1').innerHTML = arr1[0].popuptec[0];
-  document.getElementById('popuptec2').innerHTML = arr1[0].popuptec[1];
-  document.getElementById('popuptec3').innerHTML = arr1[0].popuptec[2];
-  document.getElementById('popuptec4').innerHTML = arr1[0].popuptec[3];
+  document.getElementById('popuptec1').innerHTML = arr2[0].popuptec1;
+  document.getElementById('popuptec2').innerHTML = arr2[0].popuptec2;
+  document.getElementById('popuptec3').innerHTML = arr2[0].popuptec3;
+  document.getElementById('popuptec4').innerHTML = arr2[0].popuptec4;
   document.getElementById('see_live1').href = arr1[0].btnlive;
   document.getElementById('see_source1').href = arr1[0].btnsource;
 });
@@ -91,14 +101,15 @@ btn1.addEventListener('click', () => {
 const btn3 = document.querySelector('.btn3');
 
 btn3.addEventListener('click', () => {
+  popUp1.classList.toggle('popUpactive');
   popUp1.style.display = 'block';
   document.getElementById('popuptitle').innerHTML = arr1[1].popuptitle;
   document.getElementById('popupdescription').innerHTML = arr1[1].popupdescription;
   document.getElementById('popupimg').src = arr1[1].popupimg;
-  document.getElementById('popuptec1').innerHTML = arr1[0].popuptec[0];
-  document.getElementById('popuptec2').innerHTML = arr1[0].popuptec[1];
-  document.getElementById('popuptec3').innerHTML = arr1[0].popuptec[2];
-  document.getElementById('popuptec4').innerHTML = arr1[0].popuptec[3];
+  document.getElementById('popuptec1').innerHTML = arr2[0].popuptec1;
+  document.getElementById('popuptec2').innerHTML = arr2[0].popuptec2;
+  document.getElementById('popuptec3').innerHTML = arr2[0].popuptec3;
+  document.getElementById('popuptec4').innerHTML = arr2[0].popuptec4;
   document.getElementById('see_live1').href = arr1[1].btnlive;
   document.getElementById('see_source1').href = arr1[1].btnsource;
 });
@@ -106,14 +117,15 @@ btn3.addEventListener('click', () => {
 const btn4 = document.querySelector('.btn4');
 
 btn4.addEventListener('click', () => {
+  popUp1.classList.toggle('popUpactive');
   popUp1.style.display = 'block';
   document.getElementById('popuptitle').innerHTML = arr1[2].popuptitle;
   document.getElementById('popupdescription').innerHTML = arr1[2].popupdescription;
   document.getElementById('popupimg').src = arr1[2].popupimg;
-  document.getElementById('popuptec1').innerHTML = arr1[0].popuptec[0];
-  document.getElementById('popuptec2').innerHTML = arr1[0].popuptec[1];
-  document.getElementById('popuptec3').innerHTML = arr1[0].popuptec[2];
-  document.getElementById('popuptec4').innerHTML = arr1[0].popuptec[3];
+  document.getElementById('popuptec1').innerHTML = arr2[0].popuptec1;
+  document.getElementById('popuptec2').innerHTML = arr2[0].popuptec2;
+  document.getElementById('popuptec3').innerHTML = arr2[0].popuptec3;
+  document.getElementById('popuptec4').innerHTML = arr2[0].popuptec4;
   document.getElementById('see_live1').href = arr1[2].btnlive;
   document.getElementById('see_source1').href = arr1[2].btnsource;
 });
