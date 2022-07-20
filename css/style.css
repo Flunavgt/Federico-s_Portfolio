@@ -179,7 +179,10 @@ a {
 
 
 
-
+.popup_buttons {
+  display: flex;
+  flex-flow: column wrap;
+}
 
 .popUp1 {
   background-color: #1a17653b;
