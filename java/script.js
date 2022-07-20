@@ -49,11 +49,15 @@ newarrow.addEventListener('click', () => {
 
 const arr1 = ['Multi-Post Stories 1', 'This is the firtst A daily for this is a test and is test number 1', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
 
-const [first,second,third,fourth,fifth,sixth] = arr1
+const [first, second, third, fourth, fifth, sixth] = arr1;
 
 const arr2 = ['Multi-Post Stories 2', 'This is the second A daily for this is a test and is test number 2', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
 
+const [one, two, three, four, five, six] = arr2;
+
 const arr3 = ['Multi-Post Stories 3', 'This is the third A daily for this is a test and is test number 3', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
+
+const [name3, descrip, tec1, tec2, tec3, tec4] = arr3;
 
 const btn1 = document.querySelector('.btn1');
 const popUp1 = document.querySelector('#popUp1');
@@ -92,23 +96,23 @@ function openpopUp1(string) {
     document.getElementById('see_live1').href = 'https://www.github.com';
     document.getElementById('see_source1').href = 'https://www.github.com';
   } if (string === 'project2') {
-    document.getElementById('popuptitle').innerHTML = arr2[0];
-    document.getElementById('popupdescription').innerHTML = arr2[1];
+    document.getElementById('popuptitle').innerHTML = one;
+    document.getElementById('popupdescription').innerHTML = two;
     document.getElementById('popupimg').src = './pictures/github.png';
-    document.getElementById('popuptec1').innerHTML = arr2[2];
-    document.getElementById('popuptec2').innerHTML = arr2[3];
-    document.getElementById('popuptec3').innerHTML = arr2[4];
-    document.getElementById('popuptec4').innerHTML = arr2[5];
+    document.getElementById('popuptec1').innerHTML = three;
+    document.getElementById('popuptec2').innerHTML = four;
+    document.getElementById('popuptec3').innerHTML = five;
+    document.getElementById('popuptec4').innerHTML = six;
     document.getElementById('see_live1').href = 'https://www.github.com';
     document.getElementById('see_source1').href = 'https://www.github.com';
   } if (string === 'project3') {
-    document.getElementById('popuptitle').innerHTML = arr3[0];
-    document.getElementById('popupdescription').innerHTML = arr3[1];
+    document.getElementById('popuptitle').innerHTML = name3;
+    document.getElementById('popupdescription').innerHTML = descrip;
     document.getElementById('popupimg').src = './pictures/linkedin.png';
-    document.getElementById('popuptec1').innerHTML = arr3[2];
-    document.getElementById('popuptec2').innerHTML = arr3[3];
-    document.getElementById('popuptec3').innerHTML = arr3[4];
-    document.getElementById('popuptec4').innerHTML = arr3[5];
+    document.getElementById('popuptec1').innerHTML = tec1;
+    document.getElementById('popuptec2').innerHTML = tec2;
+    document.getElementById('popuptec3').innerHTML = tec3;
+    document.getElementById('popuptec4').innerHTML = tec4;
     document.getElementById('see_live1').href = 'https://www.github.com';
     document.getElementById('see_source1').href = 'https://www.github.com';
   }
