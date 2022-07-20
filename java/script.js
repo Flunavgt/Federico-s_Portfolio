@@ -49,6 +49,8 @@ newarrow.addEventListener('click', () => {
 
 const arr1 = ['Multi-Post Stories 1', 'This is the firtst A daily for this is a test and is test number 1', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
 
+const [first,second,third,fourth,fifth,sixth] = arr1
+
 const arr2 = ['Multi-Post Stories 2', 'This is the second A daily for this is a test and is test number 2', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
 
 const arr3 = ['Multi-Post Stories 3', 'This is the third A daily for this is a test and is test number 3', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
@@ -80,13 +82,13 @@ btn2.addEventListener('click', () => {
 
 function openpopUp1(string) {
   if (string === 'project1') {
-    document.getElementById('popuptitle').innerHTML = arr1[0];
-    document.getElementById('popupdescription').innerHTML = arr1[1];
-    document.getElementById('popupimg').src = "./pictures/twitter.png";
-    document.getElementById('popuptec1').innerHTML = arr1[2];
-    document.getElementById('popuptec2').innerHTML = arr1[3];
-    document.getElementById('popuptec3').innerHTML = arr1[4];
-    document.getElementById('popuptec4').innerHTML = arr1[5];
+    document.getElementById('popuptitle').innerHTML = first;
+    document.getElementById('popupdescription').innerHTML = second;
+    document.getElementById('popupimg').src = './pictures/twitter.png';
+    document.getElementById('popuptec1').innerHTML = third;
+    document.getElementById('popuptec2').innerHTML = fourth;
+    document.getElementById('popuptec3').innerHTML = fifth;
+    document.getElementById('popuptec4').innerHTML = sixth;
     document.getElementById('see_live1').href = 'https://www.github.com';
     document.getElementById('see_source1').href = 'https://www.github.com';
   } if (string === 'project2') {
@@ -102,7 +104,7 @@ function openpopUp1(string) {
   } if (string === 'project3') {
     document.getElementById('popuptitle').innerHTML = arr3[0];
     document.getElementById('popupdescription').innerHTML = arr3[1];
-    document.getElementById('popupimg').src = "./pictures/linkedin.png";
+    document.getElementById('popupimg').src = './pictures/linkedin.png';
     document.getElementById('popuptec1').innerHTML = arr3[2];
     document.getElementById('popuptec2').innerHTML = arr3[3];
     document.getElementById('popuptec3').innerHTML = arr3[4];
