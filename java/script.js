@@ -64,18 +64,45 @@ const popUp1 = document.querySelector('#popUp1');
 
 btn1.addEventListener('click', () => {
   popUp1.style.display = 'block';
+  document.getElementById('popuptitle').innerHTML = first;
+  document.getElementById('popupdescription').innerHTML = second;
+  document.getElementById('popupimg').src = './pictures/twitter.png';
+  document.getElementById('popuptec1').innerHTML = third;
+  document.getElementById('popuptec2').innerHTML = fourth;
+  document.getElementById('popuptec3').innerHTML = fifth;
+  document.getElementById('popuptec4').innerHTML = sixth;
+  document.getElementById('see_live1').href = 'https://www.github.com';
+  document.getElementById('see_source1').href = 'https://www.github.com';
 });
 
 const btn3 = document.querySelector('.btn3');
 
 btn3.addEventListener('click', () => {
   popUp1.style.display = 'block';
+  document.getElementById('popuptitle').innerHTML = one;
+  document.getElementById('popupdescription').innerHTML = two;
+  document.getElementById('popupimg').src = './pictures/github.png';
+  document.getElementById('popuptec1').innerHTML = three;
+  document.getElementById('popuptec2').innerHTML = four;
+  document.getElementById('popuptec3').innerHTML = five;
+  document.getElementById('popuptec4').innerHTML = six;
+  document.getElementById('see_live1').href = 'https://www.github.com';
+  document.getElementById('see_source1').href = 'https://www.github.com';
 });
 
 const btn4 = document.querySelector('.btn4');
 
 btn4.addEventListener('click', () => {
   popUp1.style.display = 'block';
+  document.getElementById('popuptitle').innerHTML = name3;
+  document.getElementById('popupdescription').innerHTML = descrip;
+  document.getElementById('popupimg').src = './pictures/linkedin.png';
+  document.getElementById('popuptec1').innerHTML = tec1;
+  document.getElementById('popuptec2').innerHTML = tec2;
+  document.getElementById('popuptec3').innerHTML = tec3;
+  document.getElementById('popuptec4').innerHTML = tec4;
+  document.getElementById('see_live1').href = 'https://www.github.com';
+  document.getElementById('see_source1').href = 'https://www.github.com';
 });
 
 const btn2 = document.querySelector('.btn2');
@@ -83,37 +110,3 @@ const btn2 = document.querySelector('.btn2');
 btn2.addEventListener('click', () => {
   popUp1.style.display = 'none';
 });
-
-function openpopUp1(string) {
-  if (string === 'project1') {
-    document.getElementById('popuptitle').innerHTML = first;
-    document.getElementById('popupdescription').innerHTML = second;
-    document.getElementById('popupimg').src = './pictures/twitter.png';
-    document.getElementById('popuptec1').innerHTML = third;
-    document.getElementById('popuptec2').innerHTML = fourth;
-    document.getElementById('popuptec3').innerHTML = fifth;
-    document.getElementById('popuptec4').innerHTML = sixth;
-    document.getElementById('see_live1').href = 'https://www.github.com';
-    document.getElementById('see_source1').href = 'https://www.github.com';
-  } if (string === 'project2') {
-    document.getElementById('popuptitle').innerHTML = one;
-    document.getElementById('popupdescription').innerHTML = two;
-    document.getElementById('popupimg').src = './pictures/github.png';
-    document.getElementById('popuptec1').innerHTML = three;
-    document.getElementById('popuptec2').innerHTML = four;
-    document.getElementById('popuptec3').innerHTML = five;
-    document.getElementById('popuptec4').innerHTML = six;
-    document.getElementById('see_live1').href = 'https://www.github.com';
-    document.getElementById('see_source1').href = 'https://www.github.com';
-  } if (string === 'project3') {
-    document.getElementById('popuptitle').innerHTML = name3;
-    document.getElementById('popupdescription').innerHTML = descrip;
-    document.getElementById('popupimg').src = './pictures/linkedin.png';
-    document.getElementById('popuptec1').innerHTML = tec1;
-    document.getElementById('popuptec2').innerHTML = tec2;
-    document.getElementById('popuptec3').innerHTML = tec3;
-    document.getElementById('popuptec4').innerHTML = tec4;
-    document.getElementById('see_live1').href = 'https://www.github.com';
-    document.getElementById('see_source1').href = 'https://www.github.com';
-  }
-}
