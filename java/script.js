@@ -47,17 +47,11 @@ newarrow.addEventListener('click', () => {
   modalMenu.style.display = 'none';
 });
 
-const arr1 = ['Multi-Post Stories 1' , 'This is the firtst A daily selection of privately personalized reads;\
-no accounts or sign-ups required. Has been the industry standard dummy\
-text ever since the 1500s, when an unknown printer took standard dummy test.' , 'CSS' , 'Html' , 'Bootstrap' , 'Ruby'];
+const arr1 = ['Multi-Post Stories 1', 'This is the firtst A daily for this is a test and is test number 1', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
 
-const arr2 = ['Multi-Post Stories 2' , 'This is the second A daily selection of privately personalized reads;\
-no accounts or sign-ups required. Has been the industry standard dummy\
-text ever since the 1500s, when an unknown printer took standard dummy test.' , 'CSS' , 'Html' , 'Bootstrap' , 'Ruby'];
+const arr2 = ['Multi-Post Stories 2', 'This is the second A daily for this is a test and is test number 2', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
 
-const arr3 = ['Multi-Post Stories 3' , 'This is the third A daily selection of privately personalized reads;\
-no accounts or sign-ups required. Has been the industry standard dummy\
-text ever since the 1500s, when an unknown printer took standard dummy test.' , 'CSS' , 'Html' , 'Bootstrap' , 'Ruby'];
+const arr3 = ['Multi-Post Stories 3', 'This is the third A daily for this is a test and is test number 3', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
 
 const btn1 = document.querySelector('.btn1');
 const popUp1 = document.querySelector('#popUp1');
@@ -98,7 +92,7 @@ function openpopUp1(string) {
   } if (string === 'project2') {
     document.getElementById('popuptitle').innerHTML = arr2[0];
     document.getElementById('popupdescription').innerHTML = arr2[1];
-    document.getElementById('popupimg').src = "./pictures/github.png";
+    document.getElementById('popupimg').src = './pictures/github.png';
     document.getElementById('popuptec1').innerHTML = arr2[2];
     document.getElementById('popuptec2').innerHTML = arr2[3];
     document.getElementById('popuptec3').innerHTML = arr2[4];
@@ -109,12 +103,11 @@ function openpopUp1(string) {
     document.getElementById('popuptitle').innerHTML = arr3[0];
     document.getElementById('popupdescription').innerHTML = arr3[1];
     document.getElementById('popupimg').src = "./pictures/linkedin.png";
-    document.getElementById('popuptec1').innerHTML = arr1[2];
-    document.getElementById('popuptec1').innerHTML = arr3[3];
-    document.getElementById('popuptec2').innerHTML = arr3[4];
-    document.getElementById('popuptec3').innerHTML = arr3[5];
+    document.getElementById('popuptec1').innerHTML = arr3[2];
+    document.getElementById('popuptec2').innerHTML = arr3[3];
+    document.getElementById('popuptec3').innerHTML = arr3[4];
     document.getElementById('popuptec4').innerHTML = arr3[5];
-    document.getElementById('see_live1').href = "https://www.github.com";
-    document.getElementById('see_source1').href = "https://www.github.com";
-}
+    document.getElementById('see_live1').href = 'https://www.github.com';
+    document.getElementById('see_source1').href = 'https://www.github.com';
+  }
 }
