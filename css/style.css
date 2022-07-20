@@ -740,7 +740,7 @@ form label {
     padding: 18px;
     font-size: 1rem;
     width: 110px;
-    height: 0px;
+    height: 5px;
     justify-content: center;
     align-items: center;
     display: flex;
