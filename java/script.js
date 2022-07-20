@@ -49,7 +49,7 @@ newarrow.addEventListener('click', () => {
 
 let arr1 = ["Multi-Post Stories 1","This is the firtst A daily selection of privately personalized reads\;\
 no accounts or sign-ups required. Has been the industry standard dummy\
-text ever since the 1500s\,\ when an unknown printer took standard dummy test.","CSI","Html","Bootstrap","Ruby"]
+text ever since the 1500s\,\ when an unknown printer took standard dummy test.","CSS","Html","Bootstrap","Ruby"]
 
 let arr2 = ["Multi-Post Stories 2","This is the second A daily selection of privately personalized reads\;\
 no accounts or sign-ups required. Has been the industry standard dummy\
@@ -93,6 +93,7 @@ function openpopUp1(string) {
     document.getElementById("popuptec3").innerHTML = arr1[4];
     document.getElementById("popuptec4").innerHTML = arr1[5];
     document.getElementById("see_live1").href = "https://www.github.com";
+    document.getElementById("see_source1").href = "https://www.github.com";
   } if (string== 'project2') {
     document.getElementById("popuptitle").innerHTML = arr2[0];
     document.getElementById("popupdescription").innerHTML = arr2[1];
@@ -101,6 +102,8 @@ function openpopUp1(string) {
     document.getElementById("popuptec2").innerHTML = arr2[3];
     document.getElementById("popuptec3").innerHTML = arr2[4];
     document.getElementById("popuptec4").innerHTML = arr2[5];
+    document.getElementById("see_live1").href = "https://www.github.com";
+    document.getElementById("see_source1").href = "https://www.github.com";
   } if (string== 'project3') {
     document.getElementById("popuptitle").innerHTML = arr3[0];
     document.getElementById("popupdescription").innerHTML = arr3[1];
@@ -109,5 +112,7 @@ function openpopUp1(string) {
     document.getElementById("popuptec2").innerHTML = arr3[4];
     document.getElementById("popuptec3").innerHTML = arr3[5];
     document.getElementById("popuptec4").innerHTML = arr3[5];
+    document.getElementById("see_live1").href = "https://www.github.com";
+    document.getElementById("see_source1").href = "https://www.github.com";
 }
 }

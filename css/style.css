@@ -208,6 +208,7 @@ p {
 .marginpopUp {
   border: 3px solid white;
   width: 90%;
+  height: 95%;
   margin: 2.5rem 1rem 1rem 1rem;
   background-color: rgba(255, 255, 255, 0.043);
   display: flex;
@@ -221,15 +222,19 @@ p {
   gap: 25px;
 }
 
-.see_live1,
-.see_source1 {
+#see_live1,
+#see_source1 {
   margin: 0;
   margin-bottom: 1rem;
+  background-color: #7d73fc;
+  padding: 12px;
+  width: 89px;
+  color: white;
+  font-size: 0.6rem;
+  border: none;
+  cursor: pointer;
 }
 
-.see_source1 {
-  margin-bottom: 2rem;
-}
 
 
 
@@ -374,9 +379,11 @@ li {
   color: white;
   font-weight: 500;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   padding-top: 25px;
   width: 250px;
+  padding-left: 1.89rem;
+  padding-bottom: 3.5rem;
 }
 
 .workdescription {
@@ -386,6 +393,8 @@ li {
   margin-left: 2.5rem;
   margin-right: 1rem;
   width: 300px;
+  text-align: left;
+  padding-bottom: 2rem;
 }
 
 .usedcode {
@@ -582,6 +591,14 @@ form label {
     background-size: contain;
   }
 
+  .workdescription {
+    padding-bottom: 0.5rem;
+  }
+
+  .popUp1 .workdescription {
+    width: 600px;
+  }
+
   .hamburger {
     display: none;
   }
@@ -653,7 +670,7 @@ form label {
 
   .jobdesc {
     width: 450px;
-    height: 400px;
+    height: 500px;
   }
 
   .work1title {
@@ -662,6 +679,7 @@ form label {
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 0;
+    padding-bottom: 1.25rem;
   }
 
   body {
@@ -708,5 +726,45 @@ form label {
   .projectpic1:hover {
     width: 560px;
     height: 435px;
+  }
+
+  .popUp1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img_popUp1 {
+    width: 368px;
+    padding: 0;
+  }
+  
+  .marginpopUp {
+    width: 80%;
+    margin-left: 150px;
+    margin-bottom: 0;
+    height: 80%;
+    padding-bottom: 0;
+  }
+
+  .toppopup1 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  #see_live1,
+  #see_source1 {
+    margin-left: 50px;
+    padding: 20px;
+    font-size: 1.25rem;
+    width: 250px;
+  }
+
+  #see_live1 {
+    margin-left: 0;
+  }
+  .popUp1 .usedcode {
+    padding-bottom: 3rem;
   }
 }
