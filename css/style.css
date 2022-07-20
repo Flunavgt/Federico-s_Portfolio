@@ -737,11 +737,13 @@ form label {
   #see_live1,
   #see_source1 {
     margin-left: 50px;
-    padding: 20px;
-    font-size: 1.25rem;
-    width: 180px;
-    height: 60px;
-    text-align: center;
+    padding: 18px;
+    font-size: 1rem;
+    width: 110px;
+    height: 0px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   #see_live1 {
@@ -764,7 +766,7 @@ form label {
   }
 
   .popup_buttons a {
-    color: red;
+    color: white;
     height: 40px;
     background-color: #5e42d7;
     width: 70px;

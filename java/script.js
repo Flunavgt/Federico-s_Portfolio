@@ -52,7 +52,7 @@ const arr1 = [
     id: 0,
     popuptitle: 'Multi-Post Stories 1',
     popupdescription: 'This is the first A daily for this is a test and is test number 1',
-    popuptec:['CSS', 'Html', 'Bootstrap', 'Ruby'],
+    popuptec: ['CSS', 'Html', 'Bootstrap', 'Ruby'],
     popupimg: './pictures/golf.jpg',
     btnlive: 'https://www.github.com',
     btnsource: 'https://www.github.com',
@@ -73,13 +73,13 @@ const arr1 = [
 
 const arr2 = [
   {
-    id:0,
+    id: 0,
     popuptec1: 'CSS',
     popuptec2: 'Html',
     popuptec3: 'Bootstrap',
     popuptec4: 'Ruby',
-  }
-]
+  },
+];
 
 const btn1 = document.querySelector('.btn1');
 const popUp1 = document.querySelector('#popUp1');
