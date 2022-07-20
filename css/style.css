@@ -176,9 +176,6 @@ a {
   font-size: 1.75rem;
 }
 
-
-
-
 .popup_buttons {
   display: flex;
   flex-flow: column wrap;
@@ -237,18 +234,6 @@ p {
   border: none;
   cursor: pointer;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .sep {
   width: 250px;
