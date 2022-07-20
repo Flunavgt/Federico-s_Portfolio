@@ -175,15 +175,21 @@ a {
 }
 
 .popUp1 {
-  background-color: #1a17653b;
-  backdrop-filter: blur(100px);
+  background-color: #0d052e;
+  background-image: url("/Federico-s_Portfolio/pictures/twocirclesheader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
   text-align: center;
   position: fixed;
-  display: none;
+}
+
+.popUpactive {
+  display: none !important ;
 }
 
 .img_popUp1 {
@@ -203,21 +209,17 @@ p {
   width: 90%;
   height: 95%;
   margin: 2.5rem 1rem 1rem 1rem;
-  background-color: rgba(255, 255, 255, 0.043);
+  background-color: rgba(255, 255, 255, 0.213);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-self: center;
 }
 
-.marginpopUp ul {
-  padding: 0;
-  gap: 25px;
-}
-
-#see_live1,
+/*#see_live1,
 #see_source1 {
   margin: 0;
+  height: 40px;
   margin-bottom: 1rem;
   background-color: #7d73fc;
   padding: 12px;
@@ -226,7 +228,8 @@ p {
   font-size: 0.6rem;
   border: none;
   cursor: pointer;
-}
+} */
+
 
 .sep {
   width: 250px;
@@ -584,7 +587,9 @@ form label {
   }
 
   .popUp1 .workdescription {
-    width: 600px;
+    width: 684px;
+    padding-top: 2rem;
+    font-weight: lighter;
   }
 
   .hamburger {
@@ -723,8 +728,11 @@ form label {
   }
 
   .img_popUp1 {
-    width: 368px;
+    width: 75%;
+    height: 55%;
     padding: 0;
+    margin: 0;
+    justify-items: center;
   }
 
   .marginpopUp {
@@ -746,7 +754,9 @@ form label {
     margin-left: 50px;
     padding: 20px;
     font-size: 1.25rem;
-    width: 250px;
+    width: 180px;
+    height: 60px;
+    text-align: center;
   }
 
   #see_live1 {
@@ -757,8 +767,21 @@ form label {
     padding-bottom: 3rem;
   }
 
+  .pop {
+    border-left: 1px solid;
+    padding-left: 15px;
+    font-weight: bold;
+  }
+
   .popup_buttons {
     display: flex;
     flex-flow: row wrap;
+  }
+
+  .popup_buttons a {
+    color: red;
+    height: 40px;
+    background-color: #5e42d7;
+    width: 70px;
   }
 }

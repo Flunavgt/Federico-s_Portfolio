@@ -47,62 +47,75 @@ newarrow.addEventListener('click', () => {
   modalMenu.style.display = 'none';
 });
 
-const arr1 = ['Multi-Post Stories 1', 'This is the firtst A daily for this is a test and is test number 1', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
-
-const [first, second, third, fourth, fifth, sixth] = arr1;
-
-const arr2 = ['Multi-Post Stories 2', 'This is the second A daily for this is a test and is test number 2', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
-
-const [one, two, three, four, five, six] = arr2;
-
-const arr3 = ['Multi-Post Stories 3', 'This is the third A daily for this is a test and is test number 3', 'CSS', 'Html', 'Bootstrap', 'Ruby'];
-
-const [name3, descrip, tec1, tec2, tec3, tec4] = arr3;
+const arr1 = [
+  {
+    id: 0,
+    popuptitle:'Multi-Post Stories 1',
+    popupdescription:'This is the first A daily for this is a test and is test number 1',
+    popuptec:['CSS', 'Html', 'Bootstrap', 'Ruby'],
+    popupimg:'./pictures/golf.jpg',
+    btnlive:'https://www.github.com',
+    btnsource:'https://www.github.com',
+  },
+  {
+    id: 1,
+    popuptitle:'Multi-Post Stories 2',
+    popupdescription:'This is the second A daily for this is a test and is test number 2',
+    popupimg:'./pictures/beach.jpg',
+  },
+  {
+    id: 2,
+    popuptitle:'Multi-Post Stories 3',
+    popupdescription:'This is the third A daily for this is a test and is test number 3',
+    popupimg:'./pictures/desert.jpg',
+  }
+];
 
 const btn1 = document.querySelector('.btn1');
 const popUp1 = document.querySelector('#popUp1');
 
 btn1.addEventListener('click', () => {
+  popUp1.classList.toggle('popUpactive')
   popUp1.style.display = 'block';
-  document.getElementById('popuptitle').innerHTML = first;
-  document.getElementById('popupdescription').innerHTML = second;
-  document.getElementById('popupimg').src = './pictures/twitter.png';
-  document.getElementById('popuptec1').innerHTML = third;
-  document.getElementById('popuptec2').innerHTML = fourth;
-  document.getElementById('popuptec3').innerHTML = fifth;
-  document.getElementById('popuptec4').innerHTML = sixth;
-  document.getElementById('see_live1').href = 'https://www.github.com';
-  document.getElementById('see_source1').href = 'https://www.github.com';
+  document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
+  document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
+  document.getElementById('popupimg').src = arr1[0].popupimg;
+  document.getElementById('popuptec1').innerHTML = arr1[0].popuptec[0];
+  document.getElementById('popuptec2').innerHTML = arr1[0].popuptec[1];
+  document.getElementById('popuptec3').innerHTML = arr1[0].popuptec[2];
+  document.getElementById('popuptec4').innerHTML = arr1[0].popuptec[3];
+  document.getElementById('see_live1').href = arr1[0].btnlive;
+  document.getElementById('see_source1').href = arr1[0].btnsource;
 });
 
 const btn3 = document.querySelector('.btn3');
 
 btn3.addEventListener('click', () => {
   popUp1.style.display = 'block';
-  document.getElementById('popuptitle').innerHTML = one;
-  document.getElementById('popupdescription').innerHTML = two;
-  document.getElementById('popupimg').src = './pictures/github.png';
-  document.getElementById('popuptec1').innerHTML = three;
-  document.getElementById('popuptec2').innerHTML = four;
-  document.getElementById('popuptec3').innerHTML = five;
-  document.getElementById('popuptec4').innerHTML = six;
-  document.getElementById('see_live1').href = 'https://www.github.com';
-  document.getElementById('see_source1').href = 'https://www.github.com';
+  document.getElementById('popuptitle').innerHTML = arr1[1].popuptitle;
+  document.getElementById('popupdescription').innerHTML = arr1[1].popupdescription;
+  document.getElementById('popupimg').src = arr1[1].popupimg;
+  document.getElementById('popuptec1').innerHTML = arr1[0].popuptec[0];
+  document.getElementById('popuptec2').innerHTML = arr1[0].popuptec[1];
+  document.getElementById('popuptec3').innerHTML = arr1[0].popuptec[2];
+  document.getElementById('popuptec4').innerHTML = arr1[0].popuptec[3];
+  document.getElementById('see_live1').href = arr1[1].btnlive;
+  document.getElementById('see_source1').href = arr1[1].btnsource;
 });
 
 const btn4 = document.querySelector('.btn4');
 
 btn4.addEventListener('click', () => {
   popUp1.style.display = 'block';
-  document.getElementById('popuptitle').innerHTML = name3;
-  document.getElementById('popupdescription').innerHTML = descrip;
-  document.getElementById('popupimg').src = './pictures/linkedin.png';
-  document.getElementById('popuptec1').innerHTML = tec1;
-  document.getElementById('popuptec2').innerHTML = tec2;
-  document.getElementById('popuptec3').innerHTML = tec3;
-  document.getElementById('popuptec4').innerHTML = tec4;
-  document.getElementById('see_live1').href = 'https://www.github.com';
-  document.getElementById('see_source1').href = 'https://www.github.com';
+  document.getElementById('popuptitle').innerHTML = arr1[2].popuptitle;
+  document.getElementById('popupdescription').innerHTML = arr1[2].popupdescription;
+  document.getElementById('popupimg').src = arr1[2].popupimg;
+  document.getElementById('popuptec1').innerHTML = arr1[0].popuptec[0];
+  document.getElementById('popuptec2').innerHTML = arr1[0].popuptec[1];
+  document.getElementById('popuptec3').innerHTML = arr1[0].popuptec[2];
+  document.getElementById('popuptec4').innerHTML = arr1[0].popuptec[3];
+  document.getElementById('see_live1').href = arr1[2].btnlive;
+  document.getElementById('see_source1').href = arr1[2].btnsource;
 });
 
 const btn2 = document.querySelector('.btn2');
