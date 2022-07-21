@@ -88,7 +88,7 @@ const arr1 = [
 
 const arr2 = ['CSS', 'HTML', 'Bootstrap', 'Ruby'];
 
-[one, two, three, four] = arr2
+['one', 'two', 'three', 'four'] = arr2
 
 document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="work1">
                 <img src="${items.popupimg}" style="order:${(items.id % 2) + 1}" alt="temporary image while project is completed" class="projectpic1">
@@ -114,10 +114,10 @@ btn1.addEventListener('click', () => {
   document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
   document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
   document.getElementById('popupimg').src = arr1[0].popupimg;
-  document.getElementById('popuptec1').innerHTML = one;
-  document.getElementById('popuptec2').innerHTML = two;
-  document.getElementById('popuptec3').innerHTML = three;
-  document.getElementById('popuptec4').innerHTML = four;
+  document.getElementById('popuptec1').innerHTML = 'one';
+  document.getElementById('popuptec2').innerHTML = 'two';
+  document.getElementById('popuptec3').innerHTML = 'three';
+  document.getElementById('popuptec4').innerHTML = 'four';
   document.getElementById('see_live1').href = arr1[0].btnlive;
   document.getElementById('see_source1').href = arr1[0].btnsource;
   document.getElementById('btnimg1').src = arr1[0].btnimg1;
