@@ -534,6 +534,22 @@ form label {
   margin-bottom: 40px;
 }
 
+.popup_buttons {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+}
+
+.popup_buttons a {
+  color: white;
+  height: 45px;
+  background-color: #5e42d7;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   .findMe {
     width: 768px;

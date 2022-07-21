@@ -91,9 +91,10 @@ const lang2 = arr1[0].popuptec[1];
 const lang3 = arr1[0].popuptec[2];
 const lang4 = arr1[0].popuptec[3];
 
+if (window.matchMedia("(max-width: 768px)").matches) {
 document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="work1">
-                <img src="${items.popupimg}" style="order:${(items.id % 2) + 1}" alt="temporary image while project is completed" class="projectpic1">
-                <div class="jobdesc" style="order:${items.id % 2 === 0 ? 2 : 1}" >
+                <img src="${items.popupimg}"  alt="temporary image while project is completed" class="projectpic1">
+                <div class="jobdesc"  >
                 <p class="work1title">${items.popuptitle}</p>
                 <p class="workdescription" id="firstcard">${items.popupdescription}</p>
                 <ul class="usedcode">
@@ -105,6 +106,22 @@ document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div 
                     <button type="submit" id="${items.btnName}">See Project</button>
                 </div>
                 </div>`).join('');
+} else {
+  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="work1">
+                <img src="${items.popupimg}" style="order:${(items.id % 2) + 1}" alt="temporary image while project is completed" class="projectpic1">
+                <div class="jobdesc" style="order:${items.id % 2 === 0 ? 2 : 1}">
+                <p class="work1title">${items.popuptitle}</p>
+               <p class="workdescription" id="firstcard">${items.popupdescription}</p>
+                <ul class="usedcode">
+                   <li class="pop">${items.popuptec[0]}</li>
+                    <li class="pop">${items.popuptec[1]}</li>
+                    <li class="pop">${items.popuptec[2]}</li>
+                   <li class="pop">${items.popuptec[3]}</li>
+               </ul>
+                   <button type="submit" id="${items.btnName}">See Project</button>
+               </div>
+             </div>`).join('');
+}
 
 const btn1 = document.querySelector('#btn1');
 const popUp1 = document.getElementById('popUp1');
