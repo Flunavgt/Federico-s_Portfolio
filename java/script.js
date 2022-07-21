@@ -193,6 +193,6 @@ form.addEventListener("submit", (e) => {
   let upperCase = emailValue.replace(/[^A-Z]/g, '');
   if (upperCase.length > 0) {
       e.preventDefault();
-      document.getElementById('errorMessage').innerText = 'Please type all lowercase';
+      document.getElementById('errorMessage').innerText = 'Please type your email in lowercase';
  }
 });
