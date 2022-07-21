@@ -86,8 +86,10 @@ const arr1 = [
   },
 ];
 
+const arr2 = ['CSS', 'HTML', 'Bootstrap', 'Ruby'];
+
 document.getElementById('Portfolio-menu').innerHTML = arr1.map(items => `<div class="work1">
-                <img src="${items.popupimg}" style="order:${items.id % 2 + 1}" alt="temporary image while project is completed" class="projectpic1">
+                <img src="${items.popupimg}" style="order:${(items.id % 2) + 1}" alt="temporary image while project is completed" class="projectpic1">
                 <div class="jobdesc" style="order:${items.id % 2 === 0 ? 2 : 1}" >
                 <p class="work1title">${items.popuptitle}</p>
                 <p class="workdescription" id="firstcard">${items.popupdescription}</p>
@@ -99,8 +101,7 @@ document.getElementById('Portfolio-menu').innerHTML = arr1.map(items => `<div cl
                 </ul>
                     <button type="submit" id="${items.btnName}">See Project</button>
                 </div>
-                </div>`,
-).join('');
+                </div>`,).join('');
 
 const btn1 = document.querySelector('#btn1');
 const popUp1 = document.getElementById('popUp1');
@@ -111,10 +112,10 @@ btn1.addEventListener('click', () => {
   document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
   document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
   document.getElementById('popupimg').src = arr1[0].popupimg;
-  document.getElementById('popuptec1').innerHTML = arr1[0].popuptec[0];
-  document.getElementById('popuptec2').innerHTML = arr1[0].popuptec[1];
-  document.getElementById('popuptec3').innerHTML = arr1[0].popuptec[2];
-  document.getElementById('popuptec4').innerHTML = arr1[0].popuptec[3];
+  document.getElementById('popuptec1').innerHTML = arr2[0];
+  document.getElementById('popuptec2').innerHTML = arr2[1];
+  document.getElementById('popuptec3').innerHTML = arr2[2];
+  document.getElementById('popuptec4').innerHTML = arr2[3];
   document.getElementById('see_live1').href = arr1[0].btnlive;
   document.getElementById('see_source1').href = arr1[0].btnsource;
   document.getElementById('btnimg1').src = arr1[0].btnimg1;
@@ -129,10 +130,10 @@ btn3.addEventListener('click', () => {
   document.getElementById('popuptitle').innerHTML = arr1[1].popuptitle;
   document.getElementById('popupdescription').innerHTML = arr1[1].popupdescription;
   document.getElementById('popupimg').src = arr1[1].popupimg;
-  document.getElementById('popuptec1').innerHTML = arr1[1].popuptec[0];
-  document.getElementById('popuptec2').innerHTML = arr1[1].popuptec[1];
-  document.getElementById('popuptec3').innerHTML = arr1[1].popuptec[2];
-  document.getElementById('popuptec4').innerHTML = arr1[1].popuptec[3];
+  document.getElementById('popuptec1').innerHTML = arr2[0];
+  document.getElementById('popuptec2').innerHTML = arr2[1];
+  document.getElementById('popuptec3').innerHTML = arr2[2];
+  document.getElementById('popuptec4').innerHTML = arr2[3];
   document.getElementById('see_live1').href = arr1[1].btnlive;
   document.getElementById('see_source1').href = arr1[1].btnsource;
   document.getElementById('btnimg1').src = arr1[1].btnimg1;
@@ -147,10 +148,10 @@ btn4.addEventListener('click', () => {
   document.getElementById('popuptitle').innerHTML = arr1[2].popuptitle;
   document.getElementById('popupdescription').innerHTML = arr1[2].popupdescription;
   document.getElementById('popupimg').src = arr1[2].popupimg;
-  document.getElementById('popuptec1').innerHTML = arr1[2].popuptec[0];
-  document.getElementById('popuptec2').innerHTML = arr1[2].popuptec[1];
-  document.getElementById('popuptec3').innerHTML = arr1[2].popuptec[2];
-  document.getElementById('popuptec4').innerHTML = arr1[2].popuptec[3];
+  document.getElementById('popuptec1').innerHTML = arr2[0];
+  document.getElementById('popuptec2').innerHTML = arr2[1];
+  document.getElementById('popuptec3').innerHTML = arr2[2];
+  document.getElementById('popuptec4').innerHTML = arr2[3];
   document.getElementById('see_live1').href = arr1[2].btnlive;
   document.getElementById('see_source1').href = arr1[2].btnsource;
   document.getElementById('btnimg1').src = arr1[2].btnimg1;
