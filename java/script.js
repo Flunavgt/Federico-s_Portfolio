@@ -200,13 +200,13 @@ const fName = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
 const message = document.querySelector('#request1');
 
-const usr = {};
+const usrStr = {};
 
 document.querySelector('form').addEventListener('change', () => {
-  usr.name = fName.value;
-  usr.email = emailInput.value;
-  usr.message = message.value;
-  localStorage.setItem('data', JSON.stringify(usr));
+  usrStr.name = fName.value;
+  usrStr.email = emailInput.value;
+  usrStr.message = message.value;
+  localStorage.setItem('data', JSON.stringify(usrStr));
 });
 
 window.onload = function () {
