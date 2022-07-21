@@ -88,7 +88,7 @@ const arr1 = [
 
 const arr2 = ['CSS', 'HTML', 'Bootstrap', 'Ruby'];
 
-document.getElementById('Portfolio-menu').innerHTML = arr1.map(items => `<div class="work1">
+document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="work1">
                 <img src="${items.popupimg}" style="order:${(items.id % 2) + 1}" alt="temporary image while project is completed" class="projectpic1">
                 <div class="jobdesc" style="order:${items.id % 2 === 0 ? 2 : 1}" >
                 <p class="work1title">${items.popuptitle}</p>
@@ -101,7 +101,7 @@ document.getElementById('Portfolio-menu').innerHTML = arr1.map(items => `<div cl
                 </ul>
                     <button type="submit" id="${items.btnName}">See Project</button>
                 </div>
-                </div>`,).join('');
+                </div>`).join('');
 
 const btn1 = document.querySelector('#btn1');
 const popUp1 = document.getElementById('popUp1');
