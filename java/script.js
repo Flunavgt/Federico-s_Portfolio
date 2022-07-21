@@ -56,7 +56,7 @@ const arr1 = [
     popupimg: './pictures/golf.jpg',
     btnlive: 'https://www.github.com',
     btnsource: 'https://www.github.com',
-    btnName:'btn1',
+    btnName: 'btn1',
     btnimg1: './pictures/TimeAndIcons/github.png',
     btnimg2: './pictures/TimeAndIcons/github.png',
   },
@@ -68,7 +68,7 @@ const arr1 = [
     popupimg: './pictures/beach.jpg',
     btnlive: 'https://www.github.com',
     btnsource: 'https://www.github.com',
-    btnName:'btn3',
+    btnName: 'btn3',
     btnimg1: './pictures/TimeAndIcons/github.png',
     btnimg2: './pictures/TimeAndIcons/github.png',
   },
@@ -80,16 +80,15 @@ const arr1 = [
     popupimg: './pictures/desert.jpg',
     btnlive: 'https://www.github.com',
     btnsource: 'https://www.github.com',
-    btnName:'btn4',
+    btnName: 'btn4',
     btnimg1: './pictures/TimeAndIcons/github.png',
     btnimg2: './pictures/TimeAndIcons/github.png',
   },
 ];
 
-document.getElementById('Portfolio-menu').innerHTML = arr1.map(items => 
-`<div class="work1">
-                <img src="${items.popupimg}" style="order:${items.id%2 +1}" alt="temporary image while project is completed" class="projectpic1">
-                <div class="jobdesc" style="order:${items.id%2 === 0 ? 2 : 1}" >
+document.getElementById('Portfolio-menu').innerHTML = arr1.map(items => `<div class="work1">
+                <img src="${items.popupimg}" style="order:${items.id % 2 + 1}" alt="temporary image while project is completed" class="projectpic1">
+                <div class="jobdesc" style="order:${items.id % 2 === 0 ? 2 : 1}" >
                 <p class="work1title">${items.popuptitle}</p>
                 <p class="workdescription" id="firstcard">${items.popupdescription}</p>
                 <ul class="usedcode">
@@ -100,26 +99,26 @@ document.getElementById('Portfolio-menu').innerHTML = arr1.map(items =>
                 </ul>
                     <button type="submit" id="${items.btnName}">See Project</button>
                 </div>
-                </div>`
-).join('')
+                </div>`,
+).join('');
 
 const btn1 = document.querySelector('#btn1');
 const popUp1 = document.getElementById('popUp1');
 
 btn1.addEventListener('click', () => {
- popUp1.classList.toggle('popUpactive');
- popUp1.style.display = 'block';
- document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
- document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
- document.getElementById('popupimg').src = arr1[0].popupimg;
- document.getElementById('popuptec1').innerHTML = arr1[0].popuptec[0];
- document.getElementById('popuptec2').innerHTML = arr1[0].popuptec[1];
- document.getElementById('popuptec3').innerHTML = arr1[0].popuptec[2];
- document.getElementById('popuptec4').innerHTML = arr1[0].popuptec[3];
- document.getElementById('see_live1').href = arr1[0].btnlive;
- document.getElementById('see_source1').href = arr1[0].btnsource;
- document.getElementById('btnimg1').src = arr1[0].btnimg1;
- document.getElementById('btnimg2').src = arr1[0].btnimg2;
+  popUp1.classList.toggle('popUpactive');
+  popUp1.style.display = 'block';
+  document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
+  document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
+  document.getElementById('popupimg').src = arr1[0].popupimg;
+  document.getElementById('popuptec1').innerHTML = arr1[0].popuptec[0];
+  document.getElementById('popuptec2').innerHTML = arr1[0].popuptec[1];
+  document.getElementById('popuptec3').innerHTML = arr1[0].popuptec[2];
+  document.getElementById('popuptec4').innerHTML = arr1[0].popuptec[3];
+  document.getElementById('see_live1').href = arr1[0].btnlive;
+  document.getElementById('see_source1').href = arr1[0].btnsource;
+  document.getElementById('btnimg1').src = arr1[0].btnimg1;
+  document.getElementById('btnimg2').src = arr1[0].btnimg2;
 });
 
 const btn3 = document.querySelector('#btn3');
