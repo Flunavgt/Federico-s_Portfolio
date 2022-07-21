@@ -196,23 +196,23 @@ form.addEventListener('submit', (e) => {
   }
 });
 
-const fName= document.querySelector('#name');
+const fName = document.querySelector('#name');
 const emailInput = document.querySelector('#email');
-const message= document.querySelector('#request1');
+const message = document.querySelector('#request1');
 
-let usr = {};
+const usr = {};
 
-document.querySelector('form').addEventListener('change', ()=>{
-  usr.name = fName.value
-  usr.email = emailInput.value
-  usr.message = message.value
-  localStorage.setItem("data", JSON.stringify(usr))
-})
+document.querySelector('form').addEventListener('change', () => {
+  usr.name = fName.value;
+  usr.email = emailInput.value;
+  usr.message = message.value;
+  localStorage.setItem('data', JSON.stringify(usr));
+});
 
-window.onload = function(){
-  const data = JSON.parse(localStorage.getItem('data'))
-  if(!data) return;
+window.onload = function () {
+  const data = JSON.parse(localStorage.getItem('data'));
+  if (!data) return;
   fName.value = data.name;
   emailInput.value = data.email;
   message.value = data.message;
-}
+};
