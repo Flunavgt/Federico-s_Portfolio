@@ -86,9 +86,10 @@ const arr1 = [
   },
 ];
 
-const arr2 = ['CSS', 'HTML', 'Bootstrap', 'Ruby'];
-
-['one', 'two', 'three', 'four'] = arr2
+let lang1 = arr1[0].popuptec[0]
+let lang2 = arr1[0].popuptec[1]
+let lang3 = arr1[0].popuptec[2]
+let lang4 = arr1[0].popuptec[3]
 
 document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="work1">
                 <img src="${items.popupimg}" style="order:${(items.id % 2) + 1}" alt="temporary image while project is completed" class="projectpic1">
@@ -114,10 +115,10 @@ btn1.addEventListener('click', () => {
   document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
   document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
   document.getElementById('popupimg').src = arr1[0].popupimg;
-  document.getElementById('popuptec1').innerHTML = 'one';
-  document.getElementById('popuptec2').innerHTML = 'two';
-  document.getElementById('popuptec3').innerHTML = 'three';
-  document.getElementById('popuptec4').innerHTML = 'four';
+  document.getElementById('popuptec1').innerHTML = lang1;
+  document.getElementById('popuptec2').innerHTML = lang2;
+  document.getElementById('popuptec3').innerHTML = lang3;
+  document.getElementById('popuptec4').innerHTML = lang4;
   document.getElementById('see_live1').href = arr1[0].btnlive;
   document.getElementById('see_source1').href = arr1[0].btnsource;
   document.getElementById('btnimg1').src = arr1[0].btnimg1;
@@ -132,10 +133,10 @@ btn3.addEventListener('click', () => {
   document.getElementById('popuptitle').innerHTML = arr1[1].popuptitle;
   document.getElementById('popupdescription').innerHTML = arr1[1].popupdescription;
   document.getElementById('popupimg').src = arr1[1].popupimg;
-  document.getElementById('popuptec1').innerHTML = arr2[0];
-  document.getElementById('popuptec2').innerHTML = arr2[1];
-  document.getElementById('popuptec3').innerHTML = arr2[2];
-  document.getElementById('popuptec4').innerHTML = arr2[3];
+  document.getElementById('popuptec1').innerHTML = lang1;
+  document.getElementById('popuptec2').innerHTML = lang2;
+  document.getElementById('popuptec3').innerHTML = lang3;
+  document.getElementById('popuptec4').innerHTML = lang4;
   document.getElementById('see_live1').href = arr1[1].btnlive;
   document.getElementById('see_source1').href = arr1[1].btnsource;
   document.getElementById('btnimg1').src = arr1[1].btnimg1;
@@ -150,10 +151,10 @@ btn4.addEventListener('click', () => {
   document.getElementById('popuptitle').innerHTML = arr1[2].popuptitle;
   document.getElementById('popupdescription').innerHTML = arr1[2].popupdescription;
   document.getElementById('popupimg').src = arr1[2].popupimg;
-  document.getElementById('popuptec1').innerHTML = arr2[0];
-  document.getElementById('popuptec2').innerHTML = arr2[1];
-  document.getElementById('popuptec3').innerHTML = arr2[2];
-  document.getElementById('popuptec4').innerHTML = arr2[3];
+  document.getElementById('popuptec1').innerHTML = lang1;
+  document.getElementById('popuptec2').innerHTML = lang2;
+  document.getElementById('popuptec3').innerHTML = lang3;
+  document.getElementById('popuptec4').innerHTML = lang4;
   document.getElementById('see_live1').href = arr1[2].btnlive;
   document.getElementById('see_source1').href = arr1[2].btnsource;
   document.getElementById('btnimg1').src = arr1[2].btnimg1;
