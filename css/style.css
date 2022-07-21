@@ -172,6 +172,7 @@ a {
 .popup_buttons {
   display: flex;
   flex-flow: column wrap;
+  gap: 30px;
 }
 
 .popUp1 {
@@ -532,12 +533,6 @@ form label {
   line-height: 28px;
   color: #ebebff;
   margin-bottom: 40px;
-}
-
-.popup_buttons {
-  display: flex;
-  flex-flow: column wrap;
-  gap: 30px;
 }
 
 .popup_buttons a {

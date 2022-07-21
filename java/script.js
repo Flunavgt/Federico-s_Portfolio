@@ -91,8 +91,8 @@ const lang2 = arr1[0].popuptec[1];
 const lang3 = arr1[0].popuptec[2];
 const lang4 = arr1[0].popuptec[3];
 
-if (window.matchMedia("(max-width: 768px)").matches) {
-document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="work1">
+if (window.matchMedia('(max-width: 768px)').matches) {
+  document.getElementById('Portfolio-menu').innerHTML = arr1.map((items) => `<div class="work1">
                 <img src="${items.popupimg}"  alt="temporary image while project is completed" class="projectpic1">
                 <div class="jobdesc"  >
                 <p class="work1title">${items.popuptitle}</p>
