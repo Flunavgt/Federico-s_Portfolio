@@ -183,3 +183,15 @@ const btn2 = document.querySelector('.btn2');
 btn2.addEventListener('click', () => {
   popUp1.style.display = 'none';
 });
+
+const form = document.querySelector('form');
+const email = document.querySelector('.contactemail');
+
+form.addEventListener('submit', (e) => {
+  const emailValue = email.value;
+  const upperCase = emailValue.replace(/[^A-Z]/g, '');
+  if (upperCase.length > 0) {
+    e.preventDefault();
+    document.getElementById('errorMessage').innerText = 'Please type your email in lowercase';
+  }
+});
