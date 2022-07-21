@@ -156,6 +156,67 @@ a {
   justify-items: center;
 }
 
+.btn2 {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+  width: 2rem;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.toppopup1 {
+  display: flex;
+  padding-top: 1.5rem;
+}
+
+.popup_buttons {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 30px;
+}
+
+.popUp1 {
+  background-color: #0d052e;
+  background-image: url("/Federico-s_Portfolio/pictures/twocirclesheader.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  position: fixed;
+}
+
+.popUpactive {
+  display: none !important;
+}
+
+.img_popUp1 {
+  width: 70%;
+  margin: 0 8% 3rem 3%;
+  padding-top: 2rem;
+}
+
+p {
+  text-align: center;
+  max-width: 90%;
+  margin: 0 8% 0 3%;
+}
+
+.marginpopUp {
+  border: 3px solid white;
+  width: 90%;
+  height: 95%;
+  margin: 2.5rem 1rem 1rem 1rem;
+  background-color: rgba(255, 255, 255, 0.213);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+}
+
 .sep {
   width: 250px;
   border-bottom: 1px solid #646369;
@@ -288,17 +349,29 @@ li {
   color: white;
   font-weight: 500;
   font-size: 2rem;
-  text-align: center;
+  text-align: left;
   padding-top: 25px;
   width: 250px;
+  padding-left: 1.89rem;
+  padding-bottom: 3.5rem;
+}
+
+.toppopup1 .work1title {
+  margin: 0;
+  padding: 0;
+  padding-right: 2.25rem;
+  font-size: 1.75rem;
 }
 
 .workdescription {
   color: white;
   font-size: 1.3rem;
   font-family: 'inter', sans-serif;
-  margin: 20px;
+  margin-left: 2.5rem;
+  margin-right: 1rem;
   width: 300px;
+  text-align: left;
+  padding-bottom: 2rem;
 }
 
 .usedcode {
@@ -462,6 +535,16 @@ form label {
   margin-bottom: 40px;
 }
 
+.popup_buttons a {
+  color: white;
+  height: 45px;
+  background-color: #5e42d7;
+  width: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (min-width: 768px) {
   .findMe {
     width: 768px;
@@ -493,6 +576,16 @@ form label {
     background-image: url("../pictures/twocirclesheader.png");
     background-position: center;
     background-size: contain;
+  }
+
+  .workdescription {
+    padding-bottom: 0.5rem;
+  }
+
+  .popUp1 .workdescription {
+    width: 684px;
+    padding-top: 2rem;
+    font-weight: lighter;
   }
 
   .hamburger {
@@ -566,7 +659,7 @@ form label {
 
   .jobdesc {
     width: 450px;
-    height: 400px;
+    height: 500px;
   }
 
   .work1title {
@@ -575,6 +668,7 @@ form label {
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 0;
+    padding-bottom: 1.25rem;
   }
 
   body {
@@ -621,5 +715,71 @@ form label {
   .projectpic1:hover {
     width: 560px;
     height: 435px;
+  }
+
+  .popUp1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img_popUp1 {
+    width: 75%;
+    height: 55%;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+  }
+
+  .marginpopUp {
+    width: 80%;
+    margin-left: 150px;
+    margin-bottom: 0;
+    height: 90%;
+    padding-bottom: 0;
+  }
+
+  .toppopup1 {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+  }
+
+  #see_live1,
+  #see_source1 {
+    margin-left: 50px;
+    padding: 18px;
+    font-size: 1rem;
+    width: 110px;
+    height: 5px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  #see_live1 {
+    margin-left: 0;
+  }
+
+  .popUp1 .usedcode {
+    padding-bottom: 3rem;
+  }
+
+  .pop {
+    border-left: 1px solid;
+    padding-left: 15px;
+    font-weight: bold;
+  }
+
+  .popup_buttons {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  .popup_buttons a {
+    color: white;
+    height: 40px;
+    background-color: #5e42d7;
+    width: 70px;
   }
 }
