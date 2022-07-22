@@ -195,3 +195,24 @@ form.addEventListener('submit', (e) => {
     document.getElementById('errorMessage').innerText = 'Please type your email in lowercase';
   }
 });
+
+const fName = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const message = document.querySelector('#request1');
+
+const usrStr = {};
+
+document.querySelector('form').addEventListener('change', () => {
+  usrStr.name = fName.value;
+  usrStr.email = emailInput.value;
+  usrStr.message = message.value;
+  localStorage.setItem('data', JSON.stringify(usrStr));
+});
+
+window.onload = function () {
+  const data = JSON.parse(localStorage.getItem('data'));
+  if (!data) return;
+  fName.value = data.name;
+  emailInput.value = data.email;
+  message.value = data.message;
+};
