@@ -41,7 +41,7 @@ newlika.addEventListener('click', () => {
   modalMenu.style.display = 'none';
 });
 
-const newarrow = document.querySelector('#closebtn');
+const newarrow = document.'#closebtn');
 
 newarrow.addEventListener('click', () => {
   modalMenu.style.display = 'none';
@@ -124,7 +124,7 @@ if (window.matchMedia('(max-width: 768px)').matches) {
 }
 
 const btn1 = document.querySelector('#btn1');
-const popUp1 = document.getElementById('popUp1');
+popUp1 = document.getElementById('popUp1');
 
 btn1.addEventListener('click', () => {
   popUp1.classList.toggle('popUpactive');
@@ -162,7 +162,7 @@ btn3.addEventListener('click', () => {
 
 const btn4 = document.querySelector('#btn4');
 
-btn4.addEventListener('click', () => {
+btn4.addEventListener('click', ) => {
   popUp1.classList.toggle('popUpactive');
   popUp1.style.display = 'block';
   document.getElementById('popuptitle').innerHTML = arr1[2].popuptitle;
