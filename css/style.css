@@ -65,9 +65,8 @@ i {
   display: flex;
   flex-direction: column;
   text-align: left;
-  padding: 2rem;
-  padding-top: 6rem;
-  gap: 1.5rem;
+  padding: 0 3rem 0 3rem;
+  margin-top: 6rem;
   font-weight: 500;
   font-size: 1.5rem;
   background-image: url(../pictures/shape\ mobile\ menu-2.svg);
@@ -82,8 +81,15 @@ i {
 .mobMenuItem {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   font-size: 2rem;
+}
+
+.mobMenuItem a {
+  padding: 2rem;
+}
+
+.mobMenuItem span {
+  float: right;
 }
 
 .logo {
@@ -177,7 +183,7 @@ a {
 
 .popUp1 {
   background-color: #0d052e;
-  background-image: url("/Federico-s_Portfolio/pictures/twocirclesheader.png");
+  /* background-image: url("/Federico-s_Portfolio/pictures/twocirclesheader.png"); */
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
