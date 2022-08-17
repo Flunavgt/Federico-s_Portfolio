@@ -78,6 +78,10 @@ i {
   width: 2rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .mobMenuItem {
   display: flex;
   align-items: center;
@@ -95,10 +99,6 @@ i {
 .logo {
   padding-left: 30px;
   color: white;
-}
-
-a {
-  text-decoration: none;
 }
 
 .logo-name {
@@ -183,7 +183,7 @@ a {
 
 .popUp1 {
   background-color: #0d052e;
-  /* background-image: url("/Federico-s_Portfolio/pictures/twocirclesheader.png"); */
+  background-image: url("/Federico-s_Portfolio/pictures/twocirclesheader.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;

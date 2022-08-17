@@ -13,7 +13,7 @@ button.addEventListener('click', () => {
 
 const closeMMenu = document.querySelector('.navigationLinks');
 
-closeMMenu.addEventListener('click', (e) => {
+closeMMenu.addEventListener('click', () => {
   modalMenu.style.display = 'none';
 });
 
@@ -94,16 +94,16 @@ if (window.matchMedia('(max-width: 768px)').matches) {
 }
 
 window.onresize = () => {
-  location.reload();
-}
+  window.location.reload();
+};
 
 const openProjectWindow = document.querySelector('html');
+const popUp1 = document.getElementById('popUp1');
 
 openProjectWindow.addEventListener('click', (e) => {
-  // console.log(e.target.id);
-  if (e.target.id === 'btn1'){
+  if (e.target.id === 'btn1') {
     popUp1.classList.toggle('popUpactive');
-    popUp1.style.display = 'block';  
+    popUp1.style.display = 'block';
     document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
     document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
     document.getElementById('popupimg').src = arr1[0].popupimg;
@@ -116,39 +116,39 @@ openProjectWindow.addEventListener('click', (e) => {
     document.getElementById('btnimg1').src = arr1[0].btnimg1;
     document.getElementById('btnimg2').src = arr1[0].btnimg2;
   }
-  if (e.target.id === 'btn3'){
+  if (e.target.id === 'btn3') {
     popUp1.classList.toggle('popUpactive');
     popUp1.style.display = 'block';
-      document.getElementById('popuptitle').innerHTML = arr1[1].popuptitle;
-  document.getElementById('popupdescription').innerHTML = arr1[1].popupdescription;
-  document.getElementById('popupimg').src = arr1[1].popupimg;
-  document.getElementById('popuptec1').innerText = lang1;
-  document.getElementById('popuptec2').innerText = lang2;
-  document.getElementById('popuptec3').innerText = lang3;
-  document.getElementById('popuptec4').innerText = lang4;
-  document.getElementById('see_live1').href = arr1[1].btnlive;
-  document.getElementById('see_source1').href = arr1[1].btnsource;
-  document.getElementById('btnimg1').src = arr1[1].btnimg1;
-  document.getElementById('btnimg2').src = arr1[1].btnimg2;
+    document.getElementById('popuptitle').innerHTML = arr1[1].popuptitle;
+    document.getElementById('popupdescription').innerHTML = arr1[1].popupdescription;
+    document.getElementById('popupimg').src = arr1[1].popupimg;
+    document.getElementById('popuptec1').innerText = lang1;
+    document.getElementById('popuptec2').innerText = lang2;
+    document.getElementById('popuptec3').innerText = lang3;
+    document.getElementById('popuptec4').innerText = lang4;
+    document.getElementById('see_live1').href = arr1[1].btnlive;
+    document.getElementById('see_source1').href = arr1[1].btnsource;
+    document.getElementById('btnimg1').src = arr1[1].btnimg1;
+    document.getElementById('btnimg2').src = arr1[1].btnimg2;
   }
-  if (e.target.id === 'btn4'){
+  if (e.target.id === 'btn4') {
     popUp1.classList.toggle('popUpactive');
     popUp1.style.display = 'block';
-  document.getElementById('popuptitle').innerHTML = arr1[2].popuptitle;
-  document.getElementById('popupdescription').innerHTML = arr1[2].popupdescription;
-  document.getElementById('popupimg').src = arr1[2].popupimg;
-  document.getElementById('popuptec1').innerText = lang1;
-  document.getElementById('popuptec2').innerText = lang2;
-  document.getElementById('popuptec3').innerText = lang3;
-  document.getElementById('popuptec4').innerText = lang4;
-  document.getElementById('see_live1').href = arr1[2].btnlive;
-  document.getElementById('see_source1').href = arr1[2].btnsource;
-  document.getElementById('btnimg1').src = arr1[2].btnimg1;
-  document.getElementById('btnimg2').src = arr1[2].btnimg2;
+    document.getElementById('popuptitle').innerHTML = arr1[2].popuptitle;
+    document.getElementById('popupdescription').innerHTML = arr1[2].popupdescription;
+    document.getElementById('popupimg').src = arr1[2].popupimg;
+    document.getElementById('popuptec1').innerText = lang1;
+    document.getElementById('popuptec2').innerText = lang2;
+    document.getElementById('popuptec3').innerText = lang3;
+    document.getElementById('popuptec4').innerText = lang4;
+    document.getElementById('see_live1').href = arr1[2].btnlive;
+    document.getElementById('see_source1').href = arr1[2].btnsource;
+    document.getElementById('btnimg1').src = arr1[2].btnimg1;
+    document.getElementById('btnimg2').src = arr1[2].btnimg2;
   }
-  if (e.target.id === 'btn2'){
+  if (e.target.id === 'btn2') {
     popUp1.style.display = 'none';
-  } return true
+  } return true;
 });
 
 openProjectWindow.removeEventListener('click', Event, false);
@@ -178,7 +178,7 @@ document.querySelector('form').addEventListener('change', () => {
   localStorage.setItem('data', JSON.stringify(usrStr));
 });
 
-window.onload = function () {
+window.onload = function save() {
   const data = JSON.parse(localStorage.getItem('data'));
   if (!data) return;
   fName.value = data.name;
