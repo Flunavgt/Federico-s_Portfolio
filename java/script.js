@@ -11,51 +11,21 @@ button.addEventListener('click', () => {
   modalMenu.style.display = 'none';
 });
 
-const lika = document.querySelector('#closebtntest');
+const closeMMenu = document.querySelector('.navigationLinks');
 
-lika.addEventListener('click', () => {
-  modalMenu.style.display = 'none';
-});
-
-const arrow = document.querySelector('#closebtntest2');
-
-arrow.addEventListener('click', () => {
-  modalMenu.style.display = 'none';
-});
-
-const lika1 = document.querySelector('#closebtntest3');
-
-lika1.addEventListener('click', () => {
-  modalMenu.style.display = 'none';
-});
-
-const arrow1 = document.querySelector('#closebtntest4');
-
-arrow1.addEventListener('click', () => {
-  modalMenu.style.display = 'none';
-});
-
-const newlika = document.querySelector('#closebtnt');
-
-newlika.addEventListener('click', () => {
-  modalMenu.style.display = 'none';
-});
-
-const newarrow = document.querySelector('#closebtn');
-
-newarrow.addEventListener('click', () => {
+closeMMenu.addEventListener('click', () => {
   modalMenu.style.display = 'none';
 });
 
 const arr1 = [
   {
     id: 0,
-    popuptitle: 'Multi-Post Stories',
-    popupdescription: 'This is the first This is the firtst A daily selection of privately personalized reads no accounts or sign-ups required. Has been the industry standard dummy test number 1',
-    popuptec: ['CSS', 'Html', 'Bootstrap', 'Ruby'],
-    popupimg: './pictures/golf.jpg',
-    btnlive: 'https://www.github.com',
-    btnsource: 'https://www.github.com',
+    popuptitle: 'To Do List',
+    popupdescription: 'A powerful yet easy to navigate To Do List, capable edit your task and saving your inputs until desired delete',
+    popuptec: ['CSS', 'Html', 'JavaScript', 'Webpack'],
+    popupimg: './pictures/toDoSS.png',
+    btnlive: 'https://flunavgt.github.io/ToDoList/',
+    btnsource: 'https://github.com/Flunavgt/ToDoList',
     btnName: 'btn1',
     btnimg1: './pictures/TimeAndIcons/github.png',
     btnimg2: './pictures/TimeAndIcons/github.png',
@@ -123,66 +93,65 @@ if (window.matchMedia('(max-width: 768px)').matches) {
              </div>`).join('');
 }
 
-const btn1 = document.querySelector('#btn1');
+window.onresize = () => {
+  window.location.reload();
+};
+
+const openProjectWindow = document.querySelector('html');
 const popUp1 = document.getElementById('popUp1');
 
-btn1.addEventListener('click', () => {
-  popUp1.classList.toggle('popUpactive');
-  popUp1.style.display = 'block';
-  document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
-  document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
-  document.getElementById('popupimg').src = arr1[0].popupimg;
-  document.getElementById('popuptec1').innerHTML = lang1;
-  document.getElementById('popuptec2').innerHTML = lang2;
-  document.getElementById('popuptec3').innerHTML = lang3;
-  document.getElementById('popuptec4').innerHTML = lang4;
-  document.getElementById('see_live1').href = arr1[0].btnlive;
-  document.getElementById('see_source1').href = arr1[0].btnsource;
-  document.getElementById('btnimg1').src = arr1[0].btnimg1;
-  document.getElementById('btnimg2').src = arr1[0].btnimg2;
+openProjectWindow.addEventListener('click', (e) => {
+  if (e.target.id === 'btn1') {
+    popUp1.classList.toggle('popUpactive');
+    popUp1.style.display = 'block';
+    document.getElementById('popuptitle').innerHTML = arr1[0].popuptitle;
+    document.getElementById('popupdescription').innerHTML = arr1[0].popupdescription;
+    document.getElementById('popupimg').src = arr1[0].popupimg;
+    document.getElementById('popuptec1').innerText = lang1;
+    document.getElementById('popuptec2').innerText = lang2;
+    document.getElementById('popuptec3').innerText = lang3;
+    document.getElementById('popuptec4').innerText = lang4;
+    document.getElementById('see_live1').href = arr1[0].btnlive;
+    document.getElementById('see_source1').href = arr1[0].btnsource;
+    document.getElementById('btnimg1').src = arr1[0].btnimg1;
+    document.getElementById('btnimg2').src = arr1[0].btnimg2;
+  }
+  if (e.target.id === 'btn3') {
+    popUp1.classList.toggle('popUpactive');
+    popUp1.style.display = 'block';
+    document.getElementById('popuptitle').innerHTML = arr1[1].popuptitle;
+    document.getElementById('popupdescription').innerHTML = arr1[1].popupdescription;
+    document.getElementById('popupimg').src = arr1[1].popupimg;
+    document.getElementById('popuptec1').innerText = lang1;
+    document.getElementById('popuptec2').innerText = lang2;
+    document.getElementById('popuptec3').innerText = lang3;
+    document.getElementById('popuptec4').innerText = lang4;
+    document.getElementById('see_live1').href = arr1[1].btnlive;
+    document.getElementById('see_source1').href = arr1[1].btnsource;
+    document.getElementById('btnimg1').src = arr1[1].btnimg1;
+    document.getElementById('btnimg2').src = arr1[1].btnimg2;
+  }
+  if (e.target.id === 'btn4') {
+    popUp1.classList.toggle('popUpactive');
+    popUp1.style.display = 'block';
+    document.getElementById('popuptitle').innerHTML = arr1[2].popuptitle;
+    document.getElementById('popupdescription').innerHTML = arr1[2].popupdescription;
+    document.getElementById('popupimg').src = arr1[2].popupimg;
+    document.getElementById('popuptec1').innerText = lang1;
+    document.getElementById('popuptec2').innerText = lang2;
+    document.getElementById('popuptec3').innerText = lang3;
+    document.getElementById('popuptec4').innerText = lang4;
+    document.getElementById('see_live1').href = arr1[2].btnlive;
+    document.getElementById('see_source1').href = arr1[2].btnsource;
+    document.getElementById('btnimg1').src = arr1[2].btnimg1;
+    document.getElementById('btnimg2').src = arr1[2].btnimg2;
+  }
+  if (e.target.id === 'btn2') {
+    popUp1.style.display = 'none';
+  } return true;
 });
 
-const btn3 = document.querySelector('#btn3');
-
-btn3.addEventListener('click', () => {
-  popUp1.classList.toggle('popUpactive');
-  popUp1.style.display = 'block';
-  document.getElementById('popuptitle').innerHTML = arr1[1].popuptitle;
-  document.getElementById('popupdescription').innerHTML = arr1[1].popupdescription;
-  document.getElementById('popupimg').src = arr1[1].popupimg;
-  document.getElementById('popuptec1').innerHTML = lang1;
-  document.getElementById('popuptec2').innerHTML = lang2;
-  document.getElementById('popuptec3').innerHTML = lang3;
-  document.getElementById('popuptec4').innerHTML = lang4;
-  document.getElementById('see_live1').href = arr1[1].btnlive;
-  document.getElementById('see_source1').href = arr1[1].btnsource;
-  document.getElementById('btnimg1').src = arr1[1].btnimg1;
-  document.getElementById('btnimg2').src = arr1[1].btnimg2;
-});
-
-const btn4 = document.querySelector('#btn4');
-
-btn4.addEventListener('click', () => {
-  popUp1.classList.toggle('popUpactive');
-  popUp1.style.display = 'block';
-  document.getElementById('popuptitle').innerHTML = arr1[2].popuptitle;
-  document.getElementById('popupdescription').innerHTML = arr1[2].popupdescription;
-  document.getElementById('popupimg').src = arr1[2].popupimg;
-  document.getElementById('popuptec1').innerHTML = lang1;
-  document.getElementById('popuptec2').innerHTML = lang2;
-  document.getElementById('popuptec3').innerHTML = lang3;
-  document.getElementById('popuptec4').innerHTML = lang4;
-  document.getElementById('see_live1').href = arr1[2].btnlive;
-  document.getElementById('see_source1').href = arr1[2].btnsource;
-  document.getElementById('btnimg1').src = arr1[2].btnimg1;
-  document.getElementById('btnimg2').src = arr1[2].btnimg2;
-});
-
-const btn2 = document.querySelector('.btn2');
-
-btn2.addEventListener('click', () => {
-  popUp1.style.display = 'none';
-});
+openProjectWindow.removeEventListener('click', Event, false);
 
 const form = document.querySelector('form');
 const email = document.querySelector('.contactemail');
@@ -209,7 +178,7 @@ document.querySelector('form').addEventListener('change', () => {
   localStorage.setItem('data', JSON.stringify(usrStr));
 });
 
-window.onload = function () {
+window.onload = function save() {
   const data = JSON.parse(localStorage.getItem('data'));
   if (!data) return;
   fName.value = data.name;
