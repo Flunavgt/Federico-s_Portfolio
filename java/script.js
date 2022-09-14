@@ -23,7 +23,7 @@ const arr1 = [
     popuptitle: 'To Do List',
     popupdescription: 'A powerful yet easy to navigate To Do List, capable edit your task and saving your inputs until desired delete',
     popuptec: ['CSS', 'Html', 'JavaScript', 'Webpack'],
-    popupimg: './pictures/ToDoSS.png',
+    popupimg: './pictures/ToDoSS.jpg',
     btnlive: 'https://flunavgt.github.io/ToDoList/',
     btnsource: 'https://github.com/Flunavgt/ToDoList',
     btnName: 'btn1',
